@@ -1,0 +1,44 @@
+name: Test Webhooks & Live Scan
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Test webhooks + run diagnostic scan
+        env:
+          KALSHI_EMAIL:              ${{ secrets.KALSHI_EMAIL }}
+          KALSHI_PASSWORD:           ${{ secrets.KALSHI_PASSWORD }}
+          DISCORD_SIGNALS_WEBHOOK:   ${{ secrets.DISCORD_SIGNALS_WEBHOOK }}
+          DISCORD_HEALTH_WEBHOOK:    ${{ secrets.DISCORD_HEALTH_WEBHOOK }}
+          ANTHROPIC_API_KEY:         ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python run_test.py
+
+      - name: Regenerate dashboard data
+        run: python generate_data.py
+
+      - name: Commit
+        run: |
+          git config user.name  "kalshi-bot[actions]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add outcomes.csv bot.log data/ docs/data.json 2>/dev/null || true
+          git diff --staged --quiet \
+            || git commit -m "🧪 test-run $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
