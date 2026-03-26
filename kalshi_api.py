@@ -2,21 +2,22 @@
 KALSHI API WRAPPER
 ==================
 Kalshi migrated from email/password to RSA API key authentication in 2025.
-Every request is signed with your RSA private key.
+Markets endpoint is public (no auth needed for scanning).
+Portfolio endpoints require RSA-signed headers.
 
-Setup (5 minutes):
+New API field names (changed from v1):
+  yes_bid / yes_ask (cents)  →  yes_bid_dollars / yes_ask_dollars (dollar strings)
+  volume (int)                →  volume_fp (float string)
+  category on market          →  category on event (requires separate /events fetch)
+
+Setup:
   1. Go to kalshi.com/account/profile → API Keys → Create New API Key
-  2. Save your Key ID and the PEM private key
-  3. Add as GitHub Secrets:
-       KALSHI_API_KEY_ID  = the Key ID shown on Kalshi
-       KALSHI_PRIVATE_KEY = the full PEM private key (including header/footer lines)
+  2. Add GitHub Secrets: KALSHI_API_KEY_ID and KALSHI_PRIVATE_KEY (full PEM)
 
 Docs: https://docs.kalshi.com/getting_started/api_keys
 """
 
 import base64
-import hashlib
-import hmac
 import time
 import datetime
 from typing import Optional
@@ -28,217 +29,287 @@ from logger import log
 
 
 class KalshiAPI:
-    """Authenticated session for the Kalshi trading API (RSA key auth)."""
 
     BASE = config.KALSHI_BASE_URL
+    _event_category_cache: dict = {}   # event_ticker → category string
 
     def __init__(self):
-        self._key_id:      str = config.KALSHI_API_KEY_ID
-        self._private_key: str = config.KALSHI_PRIVATE_KEY
-        self._session = requests.Session()
-        self._session.headers.update({"Content-Type": "application/json"})
+        self._key_id      = config.KALSHI_API_KEY_ID
+        self._private_key = config.KALSHI_PRIVATE_KEY.strip()
+        self._session     = requests.Session()
+        self._session.headers.update({"Accept": "application/json"})
         self._authenticated = False
 
-    # ── Authentication ──────────────────────────────────────────────────────────
-
-    def login(self) -> bool:
-        """
-        Validate that we have working API credentials by making a test request.
-        RSA auth doesn't have a login step — credentials are attached per-request.
-        """
-        if not self._key_id or not self._private_key:
-            log("No KALSHI_API_KEY_ID / KALSHI_PRIVATE_KEY set — "
-                "running without Kalshi auth (public markets only)", "WARN")
-            self._authenticated = False
-            return False
-
-        # Test credentials with a lightweight authenticated call
-        data = self._get("/portfolio/balance")
-        if data is not None:
-            log(f"Kalshi API key auth OK ✅  (balance: ${data.get('balance',0)/100:.2f})")
-            self._authenticated = True
-            return True
-
-        log("Kalshi API key auth failed — check KALSHI_API_KEY_ID and KALSHI_PRIVATE_KEY", "ERROR")
-        return False
+    # ── RSA signing ──────────────────────────────────────────────────────────────
 
     def _sign_request(self, method: str, path: str) -> dict:
-        """
-        Generate the three RSA auth headers required by Kalshi.
-        Signs: timestamp_ms + HTTP_METHOD.upper() + path_without_query
-        """
+        """Return auth headers for a signed request, or {} if no key configured."""
+        if not self._key_id or not self._private_key:
+            return {}
         try:
             from cryptography.hazmat.primitives import hashes, serialization
             from cryptography.hazmat.primitives.asymmetric import padding
 
-            ts_ms   = str(int(time.time() * 1000))
-            # Strip query string from path for signing
-            sign_path = path.split("?")[0]
+            ts_ms     = str(int(time.time() * 1000))
+            sign_path = path.split("?")[0]   # sign path only, not query string
             message   = (ts_ms + method.upper() + sign_path).encode("utf-8")
 
-            # Load PEM private key
-            private_key_pem = self._private_key.strip()
-            if not private_key_pem.startswith("-----"):
-                # If stored without newlines (e.g. base64 blob), try to reconstruct
-                private_key_pem = (
+            # Handle PEM keys stored as a single-line string (common in env vars)
+            pem = self._private_key
+            if "\n" not in pem and "-----" in pem:
+                # Already has headers but no line breaks — try as-is
+                pass
+            elif "\n" not in pem:
+                # Raw base64 blob — wrap it
+                pem = (
                     "-----BEGIN RSA PRIVATE KEY-----\n" +
-                    "\n".join(private_key_pem[i:i+64]
-                              for i in range(0, len(private_key_pem), 64)) +
+                    "\n".join(pem[i:i+64] for i in range(0, len(pem), 64)) +
                     "\n-----END RSA PRIVATE KEY-----"
                 )
 
             private_key = serialization.load_pem_private_key(
-                private_key_pem.encode(), password=None
+                pem.encode(), password=None
             )
-            signature = private_key.sign(message, padding.PKCS1v15(), hashes.SHA256())
-            sig_b64   = base64.b64encode(signature).decode()
+            sig     = private_key.sign(message, padding.PKCS1v15(), hashes.SHA256())
+            sig_b64 = base64.b64encode(sig).decode()
 
             return {
                 "KALSHI-ACCESS-KEY":       self._key_id,
                 "KALSHI-ACCESS-TIMESTAMP": ts_ms,
                 "KALSHI-ACCESS-SIGNATURE": sig_b64,
             }
-        except ImportError:
-            # cryptography package not installed — fall back to unsigned (public endpoints only)
-            log("cryptography package not installed — requests will be unsigned", "WARN")
-            return {}
         except Exception as exc:
-            log(f"RSA signing error: {exc}", "WARN")
+            log(f"RSA signing failed: {exc}", "WARN")
             return {}
+
+    # ── HTTP helpers ──────────────────────────────────────────────────────────────
 
     def _get(self, path: str, params: dict = None, timeout: int = 15) -> Optional[dict]:
-        full_path = path
+        qs = ""
         if params:
             from urllib.parse import urlencode
-            full_path = path + "?" + urlencode(params)
-
-        headers = self._sign_request("GET", path)   # sign base path, not with query
-
+            qs = "?" + urlencode(params)
+        headers = self._sign_request("GET", path)
         try:
             resp = self._session.get(
-                f"{self.BASE}{full_path}",
+                f"{self.BASE}{path}{qs}",
                 headers=headers,
                 timeout=timeout,
             )
             if resp.status_code == 200:
                 return resp.json()
-            if resp.status_code == 401:
-                log(f"API 401 on {path} — check your API key credentials", "WARN")
-            else:
-                log(f"API GET {path} → HTTP {resp.status_code}", "WARN")
+            log(f"API GET {path} → HTTP {resp.status_code}", "WARN")
         except Exception as exc:
             log(f"API GET {path} error: {exc}", "WARN")
         return None
 
-    # ── Market data (public — no auth needed) ────────────────────────────────────
+    # ── Authentication check ──────────────────────────────────────────────────────
+
+    def login(self) -> bool:
+        """Validate credentials with a lightweight authenticated call."""
+        if not self._key_id or not self._private_key:
+            log("No KALSHI_API_KEY_ID / KALSHI_PRIVATE_KEY — scanning public markets only", "WARN")
+            return False
+        data = self._get("/portfolio/balance")
+        if data is not None:
+            bal = data.get("balance", 0) / 100
+            log(f"Kalshi API key auth OK ✅  balance: ${bal:.2f}")
+            self._authenticated = True
+            return True
+        log("Kalshi API key auth FAILED — check KALSHI_API_KEY_ID and KALSHI_PRIVATE_KEY", "ERROR")
+        return False
+
+    # ── Event category cache ──────────────────────────────────────────────────────
+
+    def _build_event_category_cache(self, limit_pages: int = 10) -> None:
+        """
+        Fetch events in bulk and cache event_ticker → category.
+        Call this once before a full market scan.
+        """
+        cursor = None
+        fetched = 0
+        for _ in range(limit_pages):
+            params = {"limit": 200, "status": "open"}
+            if cursor:
+                params["cursor"] = cursor
+            data = self._get("/events", params=params)
+            if not data:
+                break
+            events = data.get("events", [])
+            for ev in events:
+                eticker  = ev.get("event_ticker", "")
+                category = ev.get("category", "")
+                if eticker and category:
+                    self._event_category_cache[eticker] = category
+            fetched += len(events)
+            cursor = data.get("cursor")
+            if not cursor or not events:
+                break
+            time.sleep(0.2)
+        log(f"Event category cache built: {len(self._event_category_cache)} events from {fetched} fetched")
+
+    def _category_for_market(self, raw: dict) -> str:
+        """
+        Look up category from the event cache, or infer from ticker prefix.
+        """
+        event_ticker = raw.get("event_ticker", "")
+        if event_ticker in self._event_category_cache:
+            return self._event_category_cache[event_ticker]
+
+        # Fallback: infer from ticker prefix patterns
+        ticker = raw.get("ticker", "").upper()
+        prefix_map = {
+            "KXBTC": "Crypto",   "KXETH": "Crypto",   "KXSOL": "Crypto",
+            "KXXRP": "Crypto",   "KXDOGE": "Crypto",  "KXBNB": "Crypto",
+            "KXSPY": "Financials","KXQQQ": "Financials","KXNVDA": "Financials",
+            "KXAAPL": "Financials","KXTSLA": "Financials","KXGOOG": "Financials",
+            "KXGOLD": "Financials","KXOIL": "Financials",
+            "KXCPI": "Economics", "KXFED": "Economics", "KXFOMC": "Economics",
+            "KXUNEMPLOYMENT": "Economics", "KXGDP": "Economics", "KXPCE": "Economics",
+            "KXNBA": "Sports",   "KXNFL": "Sports",   "KXMLB": "Sports",
+            "KXNHL": "Sports",   "KXNCAA": "Sports",  "KXSOCCER": "Sports",
+            "KXWEATHER": "Weather", "KXTEMP": "Weather",
+        }
+        for prefix, cat in prefix_map.items():
+            if ticker.startswith(prefix):
+                return cat
+        return ""
+
+    # ── Markets ───────────────────────────────────────────────────────────────────
 
     def get_markets(self, limit: int = 200, cursor: str = None,
-                    status: str = "open", category: str = None) -> dict:
+                    status: str = "open") -> dict:
         params = {"limit": limit, "status": status}
         if cursor:
             params["cursor"] = cursor
-        if category:
-            params["category"] = category
         data = self._get("/markets", params=params)
         return data or {"markets": [], "cursor": None}
 
     def get_all_open_markets(self) -> list:
-        """Paginate through ALL open markets and return them as a flat list."""
+        """
+        Fetch ALL open markets (paginated) and enrich each with a category.
+        Builds the event cache first for accurate category mapping.
+        """
+        # Build event category lookup once per scan
+        self._build_event_category_cache(limit_pages=15)
+
         all_markets = []
         cursor = None
         pages  = 0
         while pages < 50:
             page  = self.get_markets(limit=200, cursor=cursor, status="open")
             batch = page.get("markets", [])
+
+            # Enrich with category
+            for m in batch:
+                if not m.get("category"):
+                    m["category"] = self._category_for_market(m)
+
             all_markets.extend(batch)
             cursor = page.get("cursor")
             pages += 1
             if not cursor or not batch:
                 break
-            time.sleep(0.3)
+            time.sleep(0.25)
+
         log(f"Fetched {len(all_markets)} open markets across {pages} pages")
         return all_markets
-
-    def get_market(self, ticker: str) -> Optional[dict]:
-        data = self._get(f"/markets/{ticker}")
-        return data.get("market") if data else None
-
-    def get_orderbook(self, ticker: str) -> Optional[dict]:
-        data = self._get(f"/markets/{ticker}/orderbook")
-        return data.get("orderbook") if data else None
 
     def get_settled_markets(self, limit: int = 100) -> list:
         data = self._get("/markets", params={"status": "finalized", "limit": limit})
         return (data or {}).get("markets", [])
 
-    # ── Authenticated endpoints ───────────────────────────────────────────────────
+    # ── Portfolio (authenticated) ─────────────────────────────────────────────────
 
     def get_account_balance(self) -> Optional[float]:
-        """Return cash balance in dollars. Requires valid API key."""
         data = self._get("/portfolio/balance")
-        if data:
-            cents = data.get("balance", 0)
-            return round(cents / 100, 2)
-        return None
+        return round(data.get("balance", 0) / 100, 2) if data else None
 
     def get_portfolio_positions(self) -> list:
         data = self._get("/portfolio/positions", params={"limit": 200})
         return (data or {}).get("market_positions", [])
 
 
-# ── Market parser ────────────────────────────────────────────────────────────────
+# ── Market parser ─────────────────────────────────────────────────────────────────
 
 def parse_market(raw: dict) -> Optional[dict]:
-    """Normalise a raw Kalshi market dict into a clean standard format."""
+    """
+    Normalise a raw Kalshi API v2 market into a clean standard format.
+    Handles the new dollar-string field names (yes_ask_dollars, volume_fp etc.)
+    """
     try:
-        ticker    = raw.get("ticker", "")
-        title     = raw.get("title", "")
-        category  = raw.get("category", "")
-        subtitle  = raw.get("subtitle", "")
+        ticker   = raw.get("ticker", "")
+        title    = raw.get("title", "") or raw.get("yes_sub_title", "")
+        category = raw.get("category", "")
+        subtitle = raw.get("yes_sub_title", "")
 
-        yes_bid = int(raw.get("yes_bid", 0) or 0)
-        yes_ask = int(raw.get("yes_ask", 0) or 0)
+        # New API: prices are dollar strings ("0.4200" = 42¢)
+        # Convert to cents (int) for compatibility with the rest of the codebase
+        yes_bid_raw = raw.get("yes_bid_dollars") or raw.get("yes_bid", 0)
+        yes_ask_raw = raw.get("yes_ask_dollars") or raw.get("yes_ask", 0)
 
+        yes_bid = int(round(float(yes_bid_raw) * 100)) if yes_bid_raw else 0
+        yes_ask = int(round(float(yes_ask_raw) * 100)) if yes_ask_raw else 0
+
+        # Filter out markets with no meaningful price
         if yes_ask <= 0 or yes_ask >= 100:
+            return None
+        if yes_bid < 0:
             return None
 
         implied_prob = ((yes_bid + yes_ask) / 2) / 100.0
 
-        volume        = int(raw.get("volume", 0) or 0)
-        volume_24h    = int(raw.get("volume_24h", 0) or 0)
-        open_interest = int(raw.get("open_interest", 0) or 0)
+        # Volume: new API uses volume_fp (float string)
+        vol_raw   = raw.get("volume_fp") or raw.get("volume", 0)
+        volume    = float(vol_raw) if vol_raw else 0.0
 
-        avg_price_cents = (yes_bid + yes_ask) / 2
-        dollar_volume   = volume * (avg_price_cents / 100)
+        vol24_raw = raw.get("volume_24h_fp") or raw.get("volume_24h", 0)
+        volume_24h = float(vol24_raw) if vol24_raw else 0.0
 
-        close_time_str  = raw.get("close_time") or raw.get("expiration_time", "")
-        hours_to_close  = 999.0
+        oi_raw = raw.get("open_interest_fp") or raw.get("open_interest", 0)
+        open_interest = float(oi_raw) if oi_raw else 0.0
+
+        # Dollar volume: use liquidity_dollars if available, else estimate
+        liq_raw = raw.get("liquidity_dollars")
+        if liq_raw and float(liq_raw) > 0:
+            dollar_volume = float(liq_raw)
+        else:
+            avg_price = (yes_bid + yes_ask) / 2 / 100.0
+            dollar_volume = volume * avg_price
+
+        # Close time
+        close_time_str = raw.get("close_time") or raw.get("expiration_time", "")
+        hours_to_close = 999.0
         if close_time_str:
             try:
-                close_time = datetime.datetime.fromisoformat(
+                close_dt = datetime.datetime.fromisoformat(
                     close_time_str.replace("Z", "+00:00")
                 )
                 now = datetime.datetime.now(datetime.timezone.utc)
-                hours_to_close = (close_time - now).total_seconds() / 3600
+                hours_to_close = (close_dt - now).total_seconds() / 3600
             except Exception:
                 pass
 
+        # Skip already-expired or settled markets
+        if hours_to_close < 0:
+            return None
+
         return {
-            "ticker":         ticker,
-            "title":          title,
-            "subtitle":       subtitle,
-            "category":       category,
-            "yes_bid":        yes_bid,
-            "yes_ask":        yes_ask,
-            "implied_prob":   implied_prob,
-            "volume":         volume,
-            "volume_24h":     volume_24h,
-            "open_interest":  open_interest,
-            "dollar_volume":  dollar_volume,
-            "close_time":     close_time_str,
-            "hours_to_close": hours_to_close,
-            "result":         raw.get("result", ""),
-            "status":         raw.get("status", ""),
+            "ticker":          ticker,
+            "title":           title,
+            "subtitle":        subtitle,
+            "category":        category,
+            "yes_bid":         yes_bid,
+            "yes_ask":         yes_ask,
+            "implied_prob":    implied_prob,
+            "volume":          volume,
+            "volume_24h":      volume_24h,
+            "open_interest":   open_interest,
+            "dollar_volume":   dollar_volume,
+            "close_time":      close_time_str,
+            "hours_to_close":  hours_to_close,
+            "result":          raw.get("result", ""),
+            "status":          raw.get("status", "active"),
         }
     except Exception:
         return None
