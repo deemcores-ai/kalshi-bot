@@ -145,8 +145,9 @@ if __name__ == "__main__":
     api = KalshiAPI()
     logged_in = api.login()
     if not logged_in:
-        log("Kalshi login failed — check KALSHI_EMAIL and KALSHI_PASSWORD secrets", "ERROR")
-        sys.exit(1)
+        log("Kalshi API key auth failed — check KALSHI_API_KEY_ID and KALSHI_PRIVATE_KEY secrets", "ERROR")
+        log("Markets are still fetched publicly — running diagnostic scan anyway")
+        # Don't exit — public market scanning works without auth
 
     # 3. Full diagnostic scan
     qualifying = diagnostic_scan(api)

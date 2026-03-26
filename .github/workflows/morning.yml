@@ -34,8 +34,8 @@ jobs:
 
       - name: Run morning report and self-improvement
         env:
-          KALSHI_EMAIL:              ${{ secrets.KALSHI_EMAIL }}
-          KALSHI_PASSWORD:           ${{ secrets.KALSHI_PASSWORD }}
+          KALSHI_API_KEY_ID:          ${{ secrets.KALSHI_API_KEY_ID }}
+          KALSHI_PRIVATE_KEY:         ${{ secrets.KALSHI_PRIVATE_KEY }}
           DISCORD_SIGNALS_WEBHOOK:   ${{ secrets.DISCORD_SIGNALS_WEBHOOK }}
           DISCORD_HEALTH_WEBHOOK:    ${{ secrets.DISCORD_HEALTH_WEBHOOK }}
           ANTHROPIC_API_KEY:         ${{ secrets.ANTHROPIC_API_KEY }}

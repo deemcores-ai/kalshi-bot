@@ -9,8 +9,10 @@ set as GitHub Secrets — never put passwords in this file.
 import os
 
 # ── Credentials (from GitHub Secrets / environment) ────────────────────────────
-KALSHI_EMAIL    = os.environ.get("KALSHI_EMAIL", "")
-KALSHI_PASSWORD = os.environ.get("KALSHI_PASSWORD", "")
+# Kalshi migrated to RSA API key auth in 2025.
+# Get your API key at: kalshi.com/account/profile → API Keys
+KALSHI_API_KEY_ID  = os.environ.get("KALSHI_API_KEY_ID", "")
+KALSHI_PRIVATE_KEY = os.environ.get("KALSHI_PRIVATE_KEY", "")   # full PEM string
 
 DISCORD_SIGNALS_WEBHOOK = os.environ.get("DISCORD_SIGNALS_WEBHOOK", "")
 DISCORD_HEALTH_WEBHOOK  = os.environ.get("DISCORD_HEALTH_WEBHOOK", "")
