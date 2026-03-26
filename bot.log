@@ -1,0 +1,17 @@
+[2026-03-26 18:43:16 ET] [INFO] Scan job starting
+[2026-03-26 18:43:16 ET] [WARN] No KALSHI_EMAIL / KALSHI_PASSWORD set — running in data-only mode
+[2026-03-26 18:43:16 ET] [INFO] ============================================================
+[2026-03-26 18:43:16 ET] [INFO] Starting market scan
+[2026-03-26 18:43:16 ET] [WARN] No KALSHI_EMAIL / KALSHI_PASSWORD set — running in data-only mode
+[2026-03-26 18:43:17 ET] [WARN] API GET /portfolio/balance → HTTP 401
+[2026-03-26 18:43:17 ET] [INFO] Created outcomes log at /home/runner/work/kalshi-bot/kalshi-bot/outcomes.csv
+[2026-03-26 18:43:17 ET] [WARN] No KALSHI_EMAIL / KALSHI_PASSWORD set — running in data-only mode
+[2026-03-26 18:43:17 ET] [WARN] API GET /markets → HTTP 401
+[2026-03-26 18:43:17 ET] [INFO] Fetched 0 open markets across 1 pages
+[2026-03-26 18:43:17 ET] [INFO] Fetched 0 open markets
+[2026-03-26 18:43:17 ET] [INFO] Parsed 0 valid markets
+[2026-03-26 18:43:17 ET] [INFO] Categories: {}
+[2026-03-26 18:43:17 ET] [INFO] Checked 0 modelable markets | Found 0 edges
+[2026-03-26 18:43:17 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
+[2026-03-26 18:43:17 ET] [INFO] ============================================================
+[2026-03-26 18:43:17 ET] [INFO] Scan job complete
