@@ -117,15 +117,15 @@ def send_trade_alert(edge, sizing: dict) -> None:
 
 # ── Drawdown stop alert ──────────────────────────────────────────────────────────
 
-def send_drawdown_stop(live_balance: float, start_balance: float) -> None:
-    drop_pct = (start_balance - live_balance) / start_balance * 100
+def send_drawdown_stop(live_balance: float, peak_balance: float) -> None:
+    drop_pct = (peak_balance - live_balance) / peak_balance * 100 if peak_balance > 0 else 0
     embed = {
         "title":       "🛑 DRAWDOWN STOP TRIGGERED",
         "description": (
-            f"Live bankroll has dropped **{drop_pct:.1f}%** below starting balance.\n"
-            f"**Current: ${live_balance:.2f}** | Start: ${start_balance:.2f}\n\n"
+            f"Live bankroll has dropped **{drop_pct:.1f}%** below peak balance.\n"
+            f"**Current: ${live_balance:.2f}** | Peak ever: ${peak_balance:.2f}\n\n"
             "The bot will **not** suggest further live bets until you manually reset.\n"
-            "Review your outcomes.csv and assess what went wrong."
+            "Review your outcomes and assess what went wrong before resuming."
         ),
         "color":   0xFF4444,
         "timestamp": datetime.datetime.utcnow().isoformat() + "Z",
@@ -145,7 +145,7 @@ def send_morning_report(report: dict) -> None:
     premarket = report.get("premarket_watch", [])
 
     hit_str = f"{stats.get('hit_rate', '—')}%" if stats.get("hit_rate") else "Not enough data yet"
-    live_bal  = br.get("live",  {}).get("balance", config.LIVE_BANKROLL_START)
+    live_bal  = br.get("live",  {}).get("balance", 0.0)
     paper_bal = br.get("paper", {}).get("balance", config.PAPER_BANKROLL_START)
 
     # Category breakdown

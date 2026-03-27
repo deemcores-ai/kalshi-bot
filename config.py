@@ -18,8 +18,10 @@ DISCORD_SIGNALS_WEBHOOK = os.environ.get("DISCORD_SIGNALS_WEBHOOK", "")
 DISCORD_HEALTH_WEBHOOK  = os.environ.get("DISCORD_HEALTH_WEBHOOK", "")
 
 # ── Bankroll ────────────────────────────────────────────────────────────────────
-LIVE_BANKROLL_START   = 100.0    # dollars — your real Kalshi balance
-PAPER_BANKROLL_START  = 1000.0   # dollars — simulated parallel portfolio
+# Live bankroll start is no longer hardcoded — the bot reads your actual
+# Kalshi balance via the API on every scan and adjusts automatically.
+# Deposits are picked up with no config changes needed.
+PAPER_BANKROLL_START  = 1000.0   # simulated paper-trading starting balance
 
 # ── Edge & Filters ──────────────────────────────────────────────────────────────
 MIN_EDGE_PCT          = 8.0      # minimum edge % to alert (below = silence)
@@ -39,7 +41,7 @@ BET_SIZE_MEDIUM_MAX   = 0.04     # edge 15–25%  → max 4% of bankroll
 BET_SIZE_STRONG_MAX   = 0.05     # edge 25%+    → max 5% of bankroll
 
 # ── Risk Brakes ─────────────────────────────────────────────────────────────────
-DRAWDOWN_STOP_PCT     = 0.20     # stop trading if live bankroll drops 20%
+DRAWDOWN_STOP_PCT     = 0.50     # stop if balance drops 50% below peak ever seen
 
 # ── Scanning ────────────────────────────────────────────────────────────────────
 SCAN_INTERVAL_MINUTES = 30

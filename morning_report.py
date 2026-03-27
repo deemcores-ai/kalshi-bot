@@ -68,8 +68,8 @@ def run_weekly_review(api) -> None:
     worst_cat = min(rated_cats, key=lambda c: rated_cats[c]["hit_rate"]) if rated_cats else "—"
 
     br = load_bankroll()
-    live_pnl  = br["live"]["balance"]  - br["live"]["start"]
-    paper_pnl = br["paper"]["balance"] - br["paper"]["start"]
+    live_pnl  = br["live"]["balance"]  - br["live"]["peak"]   # negative = drawdown from peak
+    paper_pnl = br["paper"]["balance"] - br["paper"]["peak"]
 
     learned = (
         "Still accumulating data." if len(rows) < 20 else

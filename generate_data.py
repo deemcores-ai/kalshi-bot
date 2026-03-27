@@ -31,8 +31,8 @@ def read_bankroll():
     path = DATA / "bankroll.json"
     if not path.exists():
         return {
-            "live":  {"balance": 100.0,  "start": 100.0,  "peak": 100.0},
-            "paper": {"balance": 1000.0, "start": 1000.0, "peak": 1000.0},
+            "live":  {"balance": 0.0,    "peak": 0.0},
+            "paper": {"balance": 1000.0, "peak": 1000.0},
         }
     try:
         return json.loads(path.read_text())
@@ -135,8 +135,9 @@ def main():
     stats      = calculate_stats(outcomes)
 
     # Live and paper P&L
-    live_pnl  = round(bankroll.get("live",  {}).get("balance", 100)  - bankroll.get("live",  {}).get("start", 100),  2)
-    paper_pnl = round(bankroll.get("paper", {}).get("balance", 1000) - bankroll.get("paper", {}).get("start", 1000), 2)
+    # P&L = current balance vs peak ever seen (negative = drawdown from peak)
+    live_pnl  = round(bankroll.get("live",  {}).get("balance", 0)    - bankroll.get("live",  {}).get("peak", 0),    2)
+    paper_pnl = round(bankroll.get("paper", {}).get("balance", 1000) - bankroll.get("paper", {}).get("peak", 1000), 2)
 
     recent = list(reversed(outcomes[-50:]))
 

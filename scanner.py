@@ -40,7 +40,7 @@ def run_scan(api: KalshiAPI) -> list:
     if check_drawdown_stop():
         from bankroll import load_bankroll
         br = load_bankroll()
-        send_drawdown_stop(br["live"]["balance"], br["live"]["start"])
+        send_drawdown_stop(br["live"]["balance"], br["live"]["peak"])
         log("Drawdown stop active — scan aborted", "WARN")
         return []
 
