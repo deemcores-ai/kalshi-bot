@@ -243,13 +243,24 @@ def parse_market(raw: dict) -> Optional[dict]:
         category = raw.get("category", "")
         subtitle = raw.get("yes_sub_title", "")
 
-        # New API: prices are dollar strings ("0.4200" = 42¢)
-        # Convert to cents (int) for compatibility with the rest of the codebase
-        yes_bid_raw = raw.get("yes_bid_dollars") or raw.get("yes_bid", 0)
-        yes_ask_raw = raw.get("yes_ask_dollars") or raw.get("yes_ask", 0)
+        # Price normalisation: Kalshi v2 uses integers in cents (0–99).
+        # Some responses also include *_dollars (0.00–1.00 strings).
+        # Detect which format and always produce an integer in cents.
+        def _to_cents(raw_val) -> int:
+            if raw_val is None:
+                return 0
+            val = float(raw_val)
+            # Dollar format: 0.0–1.0 → multiply; Cent format: 1–99 → use directly
+            return int(round(val * 100)) if val <= 1.0 else int(round(val))
 
-        yes_bid = int(round(float(yes_bid_raw) * 100)) if yes_bid_raw else 0
-        yes_ask = int(round(float(yes_ask_raw) * 100)) if yes_ask_raw else 0
+        yes_bid = _to_cents(
+            raw.get("yes_bid_dollars") if raw.get("yes_bid_dollars") is not None
+            else raw.get("yes_bid")
+        )
+        yes_ask = _to_cents(
+            raw.get("yes_ask_dollars") if raw.get("yes_ask_dollars") is not None
+            else raw.get("yes_ask")
+        )
 
         # Filter out markets with no meaningful price
         if yes_ask <= 0 or yes_ask >= 100:

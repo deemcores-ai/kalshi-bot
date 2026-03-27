@@ -73,18 +73,14 @@ def run_scan(api: KalshiAPI) -> list:
     log(f"Categories: {dict(sorted(cat_counts.items(), key=lambda x: -x[1])[:8])}")
 
     # Edge detection
+    # Note: we let estimate_true_probability() decide if it can model each market
+    # based on title keywords. Skipping by category was causing all markets to be
+    # dropped when Kalshi's API returns empty category strings.
     edges_found = []
-    skipped_cats = set()
+    unmodelable = 0
     checked = 0
 
     for market in markets:
-        category = market.get("category", "")
-
-        # Only run expensive models on modelable categories
-        if category not in config.MODELABLE_CATEGORIES:
-            skipped_cats.add(category)
-            continue
-
         # Skip if already alerted for this market today
         if _already_alerted_today(market["ticker"]):
             continue
@@ -94,9 +90,7 @@ def run_scan(api: KalshiAPI) -> list:
         if edge is not None:
             edges_found.append(edge)
 
-    log(f"Checked {checked} modelable markets | Found {len(edges_found)} edges")
-    if skipped_cats:
-        log(f"Skipped (no model): {', '.join(sorted(skipped_cats))}")
+    log(f"Checked {checked} markets | Modelable: {checked - unmodelable} | Edges found: {len(edges_found)}")
 
     # Alert and log
     alerted = []

@@ -155,13 +155,10 @@ def _extract_price_target(title: str) -> Optional[tuple]:
     return (price, direction)
 
 
-def _find_asset_ticker(title: str, category: str) -> Optional[str]:
-    """Match title keywords to a yfinance ticker."""
+def _find_asset_ticker(title: str, category: str = "") -> Optional[str]:
+    """Match title keywords to a yfinance ticker. Accepts pre-lowercased titles."""
     title_lower = title.lower()
-
-    pool = _CRYPTO_TICKERS if category in ("Crypto",) else {}
-    pool = {**pool, **_STOCK_TICKERS}
-
+    pool = {**_CRYPTO_TICKERS, **_STOCK_TICKERS}
     for keyword, ticker in pool.items():
         if keyword in title_lower:
             return ticker
@@ -338,39 +335,42 @@ def model_weather(market: dict) -> Optional[float]:
 def estimate_true_probability(market: dict) -> Optional[float]:
     """
     Main entry point. Tries each model in order of reliability.
+    Routing is title-keyword driven — category is used as a hint only.
+    This means the bot can evaluate markets even when Kalshi's API
+    returns an empty or unmapped category string.
     Returns estimated true probability [0,1] or None if unmodelable.
     """
-    category = market.get("category", "")
-    title    = market.get("title", "")
+    title_lower = market.get("title", "").lower()
+    category    = market.get("category", "")
 
-    # Price target markets (crypto + financials)
-    if category in ("Crypto", "Financials"):
-        prob = model_price_target(market)
+    # ── Fed / FOMC / interest rate ────────────────────────────────────────────
+    if any(w in title_lower for w in ("fed", "fomc", "interest rate", "federal funds")):
+        prob = model_fed_rate(market)
         if prob is not None:
             return prob
 
-    # Economics
-    if category == "Economics":
-        title_lower = title.lower()
-        if "fed" in title_lower or "rate" in title_lower or "fomc" in title_lower:
-            prob = model_fed_rate(market)
-            if prob is not None:
-                return prob
-        if "cpi" in title_lower or "inflation" in title_lower:
-            prob = model_cpi(market)
-            if prob is not None:
-                return prob
+    # ── CPI / inflation ───────────────────────────────────────────────────────
+    if "cpi" in title_lower or "inflation" in title_lower:
+        prob = model_cpi(market)
+        if prob is not None:
+            return prob
 
-    # Weather (low confidence — only surfaces large mispricings)
-    if category == "Weather":
+    # ── Weather ───────────────────────────────────────────────────────────────
+    if any(w in title_lower for w in ("temperature", "rain", "snow", "hurricane",
+                                       "tornado", "weather", "precipitation")):
         prob = model_weather(market)
         if prob is not None:
             return prob
 
-    # Also try price targets for financial markets phrased differently
-    if category in ("Financials", "Crypto"):
-        prob = model_price_target(market)
-        if prob is not None:
-            return prob
+    # ── Price target (crypto + stocks/indices) ────────────────────────────────
+    # Try this for any market with a price target pattern — regardless of category
+    if any(w in title_lower for w in ("above", "below", "over", "under",
+                                       "exceed", "higher than", "lower than",
+                                       "at or above", "at or below")):
+        # Check if any known asset is mentioned
+        if _find_asset_ticker(title_lower, category):
+            prob = model_price_target(market)
+            if prob is not None:
+                return prob
 
     return None   # unmodelable — bot stays silent
