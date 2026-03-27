@@ -167,3 +167,17 @@ Total modelable markets evaluated: 0
 [2026-03-27 15:26:39 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
 [2026-03-27 15:26:39 ET] [INFO] ============================================================
 [2026-03-27 15:26:39 ET] [INFO] Scan job complete
+[2026-03-27 16:01:06 ET] [INFO] Scan job starting
+[2026-03-27 16:01:06 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-03-27 16:01:06 ET] [INFO] ============================================================
+[2026-03-27 16:01:06 ET] [INFO] Starting market scan
+[2026-03-27 16:01:06 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-03-27 16:01:10 ET] [INFO] Event category cache built: 3000 events from 3000 fetched
+[2026-03-27 16:01:27 ET] [INFO] Fetched 10000 open markets across 50 pages
+[2026-03-27 16:01:27 ET] [INFO] Fetched 10000 open markets
+[2026-03-27 16:01:27 ET] [INFO] Parsed 1371 valid markets
+[2026-03-27 16:01:27 ET] [INFO] Categories: {'': 1351, 'Sports': 20}
+[2026-03-27 16:01:27 ET] [INFO] Checked 1371 markets | Modelable: 1371 | Edges found: 0
+[2026-03-27 16:01:27 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
+[2026-03-27 16:01:27 ET] [INFO] ============================================================
+[2026-03-27 16:01:27 ET] [INFO] Scan job complete
