@@ -59,7 +59,7 @@ MODELABLE_CATEGORIES = {
 }
 
 # ── Kalshi API ──────────────────────────────────────────────────────────────────
-KALSHI_BASE_URL = "https://api.kalshi.com/trade-api/v2"
+KALSHI_BASE_URL = "https://api.elections.kalshi.com/trade-api/v2"
 
 # ── File paths ──────────────────────────────────────────────────────────────────
 from pathlib import Path

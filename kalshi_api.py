@@ -54,23 +54,31 @@ class KalshiAPI:
             sign_path = path.split("?")[0]   # sign path only, not query string
             message   = (ts_ms + method.upper() + sign_path).encode("utf-8")
 
-            # Handle PEM keys stored as a single-line string (common in env vars)
+            # Normalise PEM key stored as a single-line string in env vars.
+            # GitHub Secrets preserve newlines, but some shells collapse them.
             pem = self._private_key
-            if "\n" not in pem and "-----" in pem:
-                # Already has headers but no line breaks — try as-is
-                pass
-            elif "\n" not in pem:
-                # Raw base64 blob — wrap it
-                pem = (
-                    "-----BEGIN RSA PRIVATE KEY-----\n" +
-                    "\n".join(pem[i:i+64] for i in range(0, len(pem), 64)) +
-                    "\n-----END RSA PRIVATE KEY-----"
-                )
+            if "\n" not in pem:
+                # Detect header type and re-wrap with line breaks
+                if "RSA PRIVATE KEY" in pem:
+                    header, footer = "-----BEGIN RSA PRIVATE KEY-----", "-----END RSA PRIVATE KEY-----"
+                else:
+                    header, footer = "-----BEGIN PRIVATE KEY-----", "-----END PRIVATE KEY-----"
+                body = pem.replace(header, "").replace(footer, "").strip()
+                pem  = header + "\n" + "\n".join(body[i:i+64] for i in range(0, len(body), 64)) + "\n" + footer
 
             private_key = serialization.load_pem_private_key(
                 pem.encode(), password=None
             )
-            sig     = private_key.sign(message, padding.PKCS1v15(), hashes.SHA256())
+
+            # Kalshi requires RSA-PSS with SHA-256 (NOT PKCS1v15)
+            sig     = private_key.sign(
+                message,
+                padding.PSS(
+                    mgf=padding.MGF1(hashes.SHA256()),
+                    salt_length=padding.PSS.MAX_LENGTH,
+                ),
+                hashes.SHA256(),
+            )
             sig_b64 = base64.b64encode(sig).decode()
 
             return {
