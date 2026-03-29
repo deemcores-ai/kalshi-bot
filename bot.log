@@ -655,3 +655,17 @@ Total modelable markets evaluated: 0
 [2026-03-29 19:36:15 ET] [INFO] [Discord] Weekly report sent
 [2026-03-29 19:36:15 ET] [INFO] Weekly review sent
 [2026-03-29 19:36:15 ET] [INFO] Weekly review job complete
+[2026-03-29 19:41:39 ET] [INFO] Scan job starting
+[2026-03-29 19:41:39 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-03-29 19:41:39 ET] [INFO] ============================================================
+[2026-03-29 19:41:39 ET] [INFO] Starting market scan
+[2026-03-29 19:41:39 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-03-29 19:41:44 ET] [INFO] Event category cache built: 3000 events from 3000 fetched
+[2026-03-29 19:41:59 ET] [INFO] Fetched 10000 open markets across 50 pages
+[2026-03-29 19:41:59 ET] [INFO] Fetched 10000 open markets
+[2026-03-29 19:42:00 ET] [INFO] Parsed 158 valid markets
+[2026-03-29 19:42:00 ET] [INFO] Categories: {'': 158}
+[2026-03-29 19:42:00 ET] [INFO] Checked 158 markets | Modelable: 158 | Edges found: 0
+[2026-03-29 19:42:00 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
+[2026-03-29 19:42:00 ET] [INFO] ============================================================
+[2026-03-29 19:42:00 ET] [INFO] Scan job complete
