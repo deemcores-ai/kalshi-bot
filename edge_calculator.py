@@ -47,7 +47,7 @@ def _gate_check(market: dict) -> Optional[str]:
         return f"implied prob {market['implied_prob']:.1%} > {config.MAX_IMPLIED_PROB:.0%}"
     if market["hours_to_close"] < config.MIN_HOURS_TO_CLOSE:
         return f"closes in {market['hours_to_close']:.1f}h < {config.MIN_HOURS_TO_CLOSE}h"
-    if market["status"] != "open":
+    if market["status"] not in ("open", "active"):
         return f"status={market['status']}"
     return None
 

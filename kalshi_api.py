@@ -199,32 +199,39 @@ class KalshiAPI:
 
     def get_all_open_markets(self) -> list:
         """
-        Fetch ALL open markets (paginated) and enrich each with a category.
-        Builds the event cache first for accurate category mapping.
+        Fetch all real prediction markets via the /events endpoint.
+        The /markets endpoint returns only KXMVE parlay markets (zero liquidity).
+        Real markets (crypto, economics, politics, weather) are only accessible
+        via /events?with_nested_markets=true.
+        Category is populated from the parent event.
         """
-        # Build event category lookup once per scan
-        self._build_event_category_cache(limit_pages=15)
-
         all_markets = []
         cursor = None
         pages  = 0
         while pages < 50:
-            page  = self.get_markets(limit=200, cursor=cursor, status="open")
-            batch = page.get("markets", [])
+            params = {"limit": 200, "status": "open", "with_nested_markets": "true"}
+            if cursor:
+                params["cursor"] = cursor
+            data = self._get("/events", params=params)
+            if not data:
+                break
+            events = data.get("events", [])
+            cursor  = data.get("cursor")
+            pages  += 1
 
-            # Enrich with category
-            for m in batch:
-                if not m.get("category"):
-                    m["category"] = self._category_for_market(m)
+            for event in events:
+                category = event.get("category", "")
+                for m in event.get("markets", []):
+                    # Propagate event category to each market
+                    if not m.get("category"):
+                        m["category"] = category
+                    all_markets.append(m)
 
-            all_markets.extend(batch)
-            cursor = page.get("cursor")
-            pages += 1
-            if not cursor or not batch:
+            if not cursor or not events:
                 break
             time.sleep(0.25)
 
-        log(f"Fetched {len(all_markets)} open markets across {pages} pages")
+        log(f"Fetched {len(all_markets)} open markets via events endpoint across {pages} pages")
         return all_markets
 
     def get_settled_markets(self, limit: int = 100) -> list:
