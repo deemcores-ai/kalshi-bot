@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-30T17:07:04.639076Z",
+  "generated_at": "2026-03-30T18:32:54.018833Z",
   "stats": {
-    "total_alerts": 65,
+    "total_alerts": 67,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -36,7 +36,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 5,
+        "total": 7,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -50,7 +50,7 @@
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 21,
+        "total": 23,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -73,11 +73,47 @@
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-03-30T17:06:42.839093Z"
+    "updated_at": "2026-03-30T18:32:31.636877Z"
   },
   "live_pnl": 0.0,
   "paper_pnl": 0.0,
   "recent_alerts": [
+    {
+      "timestamp": "2026-03-30T18:32:53.829775Z",
+      "ticker": "KXHIGHTPHX-26MAR30-B95.5",
+      "title": "Will the maximum temperature be  95-96\u00b0 on Mar 30, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-16.5",
+      "implied_prob": "0.665",
+      "true_prob": "0.5",
+      "confidence": "70",
+      "suggested_live_dollars": "0.34",
+      "suggested_paper_dollars": "39.78",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "34",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-03-30T18:32:53.543394Z",
+      "ticker": "KXHIGHTSFO-26MAR30-T73",
+      "title": "Will the maximum temperature be  >73\u00b0 on Mar 30, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-21.0",
+      "implied_prob": "0.71",
+      "true_prob": "0.5",
+      "confidence": "70",
+      "suggested_live_dollars": "0.31",
+      "suggested_paper_dollars": "39.99",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "31",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-03-30T14:07:49.805845Z",
       "ticker": "KXSOLMAXY-27JAN01-200",
@@ -938,42 +974,6 @@
       "suggested_paper_dollars": "19.36",
       "is_paper_bet": "1",
       "paper_entry_price_cents": "88",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-03-30T02:58:10.318118Z",
-      "ticker": "KXETHMAXY-27JAN01-4500.00",
-      "title": "Will Ethereum reach above $4500.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-10.99",
-      "implied_prob": "0.155",
-      "true_prob": "0.0451",
-      "confidence": "68",
-      "suggested_live_dollars": "0.85",
-      "suggested_paper_dollars": "19.55",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "85",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-03-30T02:58:10.035656Z",
-      "ticker": "KXETHMAXY-27JAN01-4250.00",
-      "title": "Will Ethereum reach above $4250.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-12.71",
-      "implied_prob": "0.185",
-      "true_prob": "0.0579",
-      "confidence": "63",
-      "suggested_live_dollars": "0.82",
-      "suggested_paper_dollars": "19.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "82",
       "outcome": "",
       "resolved_at": "",
       "notes": ""
