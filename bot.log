@@ -1081,3 +1081,40 @@ Total modelable markets evaluated: 0
 [2026-03-30 15:58:51 ET] [INFO] Scan complete — 2 alerts sent
 [2026-03-30 15:58:51 ET] [INFO] ============================================================
 [2026-03-30 15:58:51 ET] [INFO] Scan job complete
+[2026-03-30 16:58:12 ET] [INFO] Scan job starting
+[2026-03-30 16:58:12 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-03-30 16:58:12 ET] [INFO] ============================================================
+[2026-03-30 16:58:12 ET] [INFO] Starting market scan
+[2026-03-30 16:58:12 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-03-30 16:58:12 ET] [WARN] API GET /markets → HTTP 400
+[2026-03-30 16:58:21 ET] [INFO] Fetched 39092 open markets via events endpoint across 24 pages
+[2026-03-30 16:58:21 ET] [INFO] Fetched 39092 open markets
+[2026-03-30 16:58:22 ET] [INFO] Parsed 35787 valid markets
+[2026-03-30 16:58:22 ET] [INFO] Categories: {'Sports': 20178, 'Elections': 3856, 'Entertainment': 3098, 'Economics': 2556, 'Crypto': 1977, 'Politics': 1405, 'Financials': 804, 'Mentions': 585}
+[2026-03-30 16:58:24 ET] [INFO]   price model: BTC-USD spot=66600.91 target=100000.00 vol=42.2% T=6632.0h → P=0.134
+[2026-03-30 16:58:24 ET] [INFO]   price model: BTC-USD spot=66600.91 target=100000.00 vol=42.2% T=6632.0h → P=0.134
+[2026-03-30 16:58:24 ET] [INFO]   price model: BTC-USD spot=66600.91 target=200000.00 vol=42.2% T=6632.0h → P=0.001
+[2026-03-30 16:58:24 ET] [INFO]   price model: BTC-USD spot=66600.91 target=199999.00 vol=42.2% T=6632.0h → P=0.001
+[2026-03-30 16:58:25 ET] [INFO]   fed model: implied_rate=3.650% current≈3.598% diff=5.2bps → P=0.396
+[2026-03-30 16:58:28 ET] [INFO]   weather model: 'hurricane' base_rate=0.15
+[2026-03-30 16:58:28 ET] [INFO]   CPI model: threshold=0.2% TNX=4.34% → P=0.800
+[2026-03-30 16:58:32 ET] [INFO]   weather model: 'temperature' base_rate=0.50
+[2026-03-30 16:58:32 ET] [INFO]   EDGE FOUND: KXLOWTDEN-26MAR30-B50.5 | implied=88.5% true=50.0% edge=-38.5% dir=NO conf=80
+[2026-03-30 16:58:32 ET] [INFO]   weather model: 'temperature' base_rate=0.50
+[2026-03-30 16:58:32 ET] [INFO]   EDGE FOUND: KXHIGHTLV-26MAR30-B89.5 | implied=76.0% true=50.0% edge=-26.0% dir=NO conf=80
+[2026-03-30 16:58:32 ET] [INFO]   weather model: 'temperature' base_rate=0.50
+[2026-03-30 16:58:32 ET] [INFO]   EDGE FOUND: KXHIGHTDC-26MAR30-B72.5 | implied=79.0% true=50.0% edge=-29.0% dir=NO conf=80
+[2026-03-30 16:58:32 ET] [INFO]   weather model: 'temperature' base_rate=0.50
+[2026-03-30 16:58:32 ET] [INFO]   EDGE FOUND: KXHIGHTDAL-26MAR30-B83.5 | implied=62.0% true=50.0% edge=-12.0% dir=NO conf=63
+[2026-03-30 16:58:32 ET] [INFO]   weather model: 'temperature' base_rate=0.50
+[2026-03-30 16:58:32 ET] [INFO]   EDGE FOUND: KXHIGHTATL-26MAR30-B72.5 | implied=83.5% true=50.0% edge=-33.5% dir=NO conf=80
+[2026-03-30 16:58:35 ET] [INFO]   fed model: implied_rate=3.650% current≈3.598% diff=5.2bps → P=0.604
+[2026-03-30 16:58:35 ET] [INFO] Checked 35719 markets | Modelable: 35719 | Edges found: 5
+[2026-03-30 16:58:35 ET] [INFO] [Discord] Trade alert sent: KXLOWTDEN-26MAR30-B50.5
+[2026-03-30 16:58:35 ET] [INFO] [Discord] Trade alert sent: KXHIGHTLV-26MAR30-B89.5
+[2026-03-30 16:58:36 ET] [INFO] [Discord] Trade alert sent: KXHIGHTDC-26MAR30-B72.5
+[2026-03-30 16:58:36 ET] [INFO] [Discord] Trade alert sent: KXHIGHTDAL-26MAR30-B83.5
+[2026-03-30 16:58:36 ET] [INFO] [Discord] Trade alert sent: KXHIGHTATL-26MAR30-B72.5
+[2026-03-30 16:58:36 ET] [INFO] Scan complete — 5 alerts sent
+[2026-03-30 16:58:36 ET] [INFO] ============================================================
+[2026-03-30 16:58:36 ET] [INFO] Scan job complete
