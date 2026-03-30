@@ -78,3 +78,4 @@ timestamp,ticker,title,category,direction,edge_pct,implied_prob,true_prob,confid
 2026-03-30T22:48:27.682236Z,KXHIGHTSEA-26MAR30-B50.5,"Will the maximum temperature be  50-51° on Mar 30, 2026?",Climate and Weather,NO,-39.0,0.89,0.5,80,0.39,49.92,1,13,,,
 2026-03-30T22:48:27.910091Z,KXHIGHTMIN-26MAR30-B72.5,"Will the maximum temperature be  72-73° on Mar 30, 2026?",Climate and Weather,NO,-42.5,0.925,0.5,80,0.48,50.0,1,8,,,
 2026-03-30T22:48:28.282381Z,KXHIGHTLV-26MAR30-B87.5,"Will the maximum temperature be  87-88° on Mar 30, 2026?",Climate and Weather,NO,-27.5,0.775,0.5,80,0.26,49.92,1,26,,,
+2026-03-30T23:45:58.965407Z,KXHIGHTSFO-26MAR30-B72.5,"Will the maximum temperature be  72-73° on Mar 30, 2026?",Climate and Weather,NO,-33.0,0.83,0.5,80,0.38,49.97,1,19,,,
