@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-30T02:58:19.901417Z",
+  "generated_at": "2026-03-30T05:32:26.084421Z",
   "stats": {
-    "total_alerts": 59,
+    "total_alerts": 63,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -24,7 +24,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 31,
+        "total": 34,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -36,7 +36,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 3,
+        "total": 4,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -44,13 +44,13 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 15,
+        "total": 17,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 18,
+        "total": 20,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -73,11 +73,83 @@
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-03-30T02:57:53.408788Z"
+    "updated_at": "2026-03-30T05:32:06.393753Z"
   },
   "live_pnl": 0.0,
   "paper_pnl": 0.0,
   "recent_alerts": [
+    {
+      "timestamp": "2026-03-30T05:32:25.898174Z",
+      "ticker": "KXRAINDALM-26MAR-3",
+      "title": "Rain in Dallas in Mar 2026?",
+      "category": "Climate and Weather",
+      "direction": "YES",
+      "edge_pct": "20.5",
+      "implied_prob": "0.145",
+      "true_prob": "0.35",
+      "confidence": "75",
+      "suggested_live_dollars": "0.22",
+      "suggested_paper_dollars": "25.08",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "22",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-03-30T05:32:25.656961Z",
+      "ticker": "KXBTCMAXY-26DEC31-149999.99",
+      "title": "Will Bitcoin be above $149,999.99 by Dec 31, 2026 at 11:59 PM ET?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.28",
+      "implied_prob": "0.1",
+      "true_prob": "0.0172",
+      "confidence": "63",
+      "suggested_live_dollars": "0.91",
+      "suggested_paper_dollars": "19.11",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "91",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-03-30T05:32:25.456801Z",
+      "ticker": "KXETHMAXY-27JAN01-6000.00",
+      "title": "Will Ethereum reach above $6000.00 by Jan 1, 2027 at 12:00AM?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.32",
+      "implied_prob": "0.095",
+      "true_prob": "0.0118",
+      "confidence": "68",
+      "suggested_live_dollars": "0.91",
+      "suggested_paper_dollars": "19.11",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "91",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-03-30T05:32:25.266941Z",
+      "ticker": "KXSOLMAXY-27JAN01-180",
+      "title": "Will the spot price of Solana be above $180.00 before Jan 1, 2027 at 12:00 AM ET?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-22.26",
+      "implied_prob": "0.26",
+      "true_prob": "0.0374",
+      "confidence": "70",
+      "suggested_live_dollars": "0.77",
+      "suggested_paper_dollars": "39.27",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "77",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-03-30T02:58:19.664995Z",
       "ticker": "FEDHIKE-26DEC31",
@@ -902,78 +974,6 @@
       "suggested_paper_dollars": "39.75",
       "is_paper_bet": "1",
       "paper_entry_price_cents": "75",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-03-30T02:58:09.611481Z",
-      "ticker": "KXETHMAXY-27JAN01-3500.00",
-      "title": "Will Ethereum reach above $3500.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-18.68",
-      "implied_prob": "0.31",
-      "true_prob": "0.1232",
-      "confidence": "75",
-      "suggested_live_dollars": "0.7",
-      "suggested_paper_dollars": "39.9",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "70",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-03-30T02:58:09.486042Z",
-      "ticker": "KXETHMINY-27JAN01-750",
-      "title": "Will Ethereum reach below $750.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-18.8",
-      "implied_prob": "0.205",
-      "true_prob": "0.017",
-      "confidence": "70",
-      "suggested_live_dollars": "0.8",
-      "suggested_paper_dollars": "40.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "80",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-03-30T02:58:09.251132Z",
-      "ticker": "KXETHMINY-27JAN01-1000",
-      "title": "Will Ethereum reach below $1000.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-28.42",
-      "implied_prob": "0.35",
-      "true_prob": "0.0658",
-      "confidence": "85",
-      "suggested_live_dollars": "0.66",
-      "suggested_paper_dollars": "49.5",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "66",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-03-30T02:58:09.139584Z",
-      "ticker": "KXETHMINY-27JAN01-1250",
-      "title": "Will Ethereum reach below $1250.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-37.42",
-      "implied_prob": "0.525",
-      "true_prob": "0.1508",
-      "confidence": "85",
-      "suggested_live_dollars": "0.48",
-      "suggested_paper_dollars": "49.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "48",
       "outcome": "",
       "resolved_at": "",
       "notes": ""

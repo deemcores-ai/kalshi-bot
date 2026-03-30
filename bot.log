@@ -897,3 +897,37 @@ Total modelable markets evaluated: 0
 [2026-03-29 22:58:19 ET] [INFO] Scan complete — 59 alerts sent
 [2026-03-29 22:58:19 ET] [INFO] ============================================================
 [2026-03-29 22:58:19 ET] [INFO] Scan job complete
+[2026-03-30 01:32:06 ET] [INFO] Scan job starting
+[2026-03-30 01:32:06 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-03-30 01:32:06 ET] [INFO] ============================================================
+[2026-03-30 01:32:06 ET] [INFO] Starting market scan
+[2026-03-30 01:32:06 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-03-30 01:32:06 ET] [WARN] API GET /markets → HTTP 400
+[2026-03-30 01:32:14 ET] [INFO] Fetched 35990 open markets via events endpoint across 24 pages
+[2026-03-30 01:32:14 ET] [INFO] Fetched 35990 open markets
+[2026-03-30 01:32:14 ET] [INFO] Parsed 32935 valid markets
+[2026-03-30 01:32:14 ET] [INFO] Categories: {'Sports': 17165, 'Elections': 3848, 'Entertainment': 3089, 'Economics': 2499, 'Crypto': 2327, 'Politics': 1408, 'Financials': 830, 'Mentions': 531}
+[2026-03-30 01:32:16 ET] [INFO]   price model: SOL-USD spot=83.82 target=180.00 vol=49.2% T=6647.5h → P=0.037
+[2026-03-30 01:32:16 ET] [INFO]   EDGE FOUND: KXSOLMAXY-27JAN01-180 | implied=26.0% true=3.7% edge=-22.3% dir=NO conf=70
+[2026-03-30 01:32:17 ET] [INFO]   price model: ETH-USD spot=2053.76 target=6000.00 vol=54.4% T=6647.5h → P=0.012
+[2026-03-30 01:32:17 ET] [INFO]   EDGE FOUND: KXETHMAXY-27JAN01-6000.00 | implied=9.5% true=1.2% edge=-8.3% dir=NO conf=68
+[2026-03-30 01:32:17 ET] [INFO]   price model: BTC-USD spot=67630.34 target=100000.00 vol=43.3% T=6647.5h → P=0.150
+[2026-03-30 01:32:17 ET] [INFO]   price model: BTC-USD spot=67630.34 target=100000.00 vol=43.3% T=6647.5h → P=0.150
+[2026-03-30 01:32:17 ET] [INFO]   price model: BTC-USD spot=67630.34 target=200000.00 vol=43.3% T=6647.5h → P=0.002
+[2026-03-30 01:32:17 ET] [INFO]   price model: BTC-USD spot=67630.34 target=149999.00 vol=43.3% T=6647.4h → P=0.017
+[2026-03-30 01:32:17 ET] [INFO]   EDGE FOUND: KXBTCMAXY-26DEC31-149999.99 | implied=10.0% true=1.7% edge=-8.3% dir=NO conf=63
+[2026-03-30 01:32:17 ET] [INFO]   price model: BTC-USD spot=67630.34 target=199999.00 vol=43.3% T=6647.4h → P=0.002
+[2026-03-30 01:32:17 ET] [INFO]   fed model: implied_rate=3.643% current≈3.607% diff=3.6bps → P=0.429
+[2026-03-30 01:32:19 ET] [INFO]   weather model: 'hurricane' base_rate=0.15
+[2026-03-30 01:32:20 ET] [INFO]   CPI model: threshold=0.2% TNX=4.44% → P=0.800
+[2026-03-30 01:32:22 ET] [INFO]   weather model: 'rain' base_rate=0.35
+[2026-03-30 01:32:22 ET] [INFO]   EDGE FOUND: KXRAINDALM-26MAR-3 | implied=14.5% true=35.0% edge=+20.5% dir=YES conf=75
+[2026-03-30 01:32:25 ET] [INFO]   fed model: implied_rate=3.643% current≈3.607% diff=3.6bps → P=0.571
+[2026-03-30 01:32:25 ET] [INFO] Checked 32876 markets | Modelable: 32876 | Edges found: 4
+[2026-03-30 01:32:25 ET] [INFO] [Discord] Trade alert sent: KXSOLMAXY-27JAN01-180
+[2026-03-30 01:32:25 ET] [INFO] [Discord] Trade alert sent: KXETHMAXY-27JAN01-6000.00
+[2026-03-30 01:32:25 ET] [INFO] [Discord] Trade alert sent: KXBTCMAXY-26DEC31-149999.99
+[2026-03-30 01:32:25 ET] [INFO] [Discord] Trade alert sent: KXRAINDALM-26MAR-3
+[2026-03-30 01:32:25 ET] [INFO] Scan complete — 4 alerts sent
+[2026-03-30 01:32:25 ET] [INFO] ============================================================
+[2026-03-30 01:32:25 ET] [INFO] Scan job complete
