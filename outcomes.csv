@@ -143,3 +143,5 @@ timestamp,ticker,title,category,direction,edge_pct,implied_prob,true_prob,confid
 2026-03-31T13:55:40.322374Z,KXCPIYOY-26MAR-T3.0,Will the rate of CPI inflation be above 3.0% for the year ending in March 2026?,Economics,NO,-31.91,0.95,0.6309,95,0.48,49.98,1,6,,,
 2026-03-31T13:55:40.570794Z,KXHIGHTBOS-26MAR31-T63,"Will the maximum temperature be  >63° on Mar 31, 2026?",Climate and Weather,NO,-17.5,0.675,0.5,70,0.33,39.93,1,33,,,
 2026-03-31T15:13:12.519689Z,KXLOWTLAX-26MAR31-T59,"Will the minimum temperature be  >59° on Mar 31, 2026?",Climate and Weather,NO,-41.0,0.91,0.5,80,0.5,50.0,1,10,,,
+2026-03-31T16:35:55.827179Z,KXETHMAXY-27JAN01-6000.00,"Will Ethereum reach above $6000.00 by Jan 1, 2027 at 12:00AM?",Crypto,NO,-8.63,0.095,0.0087,68,0.91,19.11,1,91,,,
+2026-03-31T16:35:56.051181Z,KXRAINCHIM-26MAR-5,Rain in Chicago in Mar 2026?,Climate and Weather,YES,12.5,0.225,0.35,63,0.29,4.64,1,29,,,
