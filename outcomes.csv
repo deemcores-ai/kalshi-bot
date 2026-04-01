@@ -237,3 +237,5 @@ timestamp,ticker,title,category,direction,edge_pct,implied_prob,true_prob,confid
 2026-04-01T19:17:07.673180Z,KXHIGHPHIL-26APR01-B83.5,"Will the **high temp in Philadelphia** be 83-84° on Apr 1, 2026?",Climate and Weather,NO,-50.67,0.645,0.1383,80,0.4,50.0,1,40,,,
 2026-04-01T19:17:07.949712Z,KXHIGHAUS-26APR01-B92.5,"Will the **high temp in Austin** be 92-93° on Apr 1, 2026?",Climate and Weather,NO,-42.93,0.635,0.2057,80,0.38,49.78,1,38,,,
 2026-04-01T20:10:18.396337Z,KXETHMAXY-27JAN01-6000.00,"Will Ethereum reach above $6000.00 by Jan 1, 2027 at 12:00AM?",Crypto,NO,-8.37,0.095,0.0113,68,0.91,19.11,1,91,,,
+2026-04-01T23:08:34.011628Z,KXETHMAXMON-ETH-26APR30-250000,"Will ETH trimmed mean be above $2500.00 by 11:59 PM ET on Apr 30, 2026?",Crypto,NO,-26.12,0.41,0.1488,80,0.61,49.41,1,61,,,
+2026-04-01T23:08:34.212698Z,KXINXU-26APR02H1600-T6499.9999,"Will the S&P 500 be above 6499.9999 on Apr 2, 2026 at 4pm EDT?",Financials,NO,-81.5,0.815,0.0,80,0.42,49.98,1,21,,,

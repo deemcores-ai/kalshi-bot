@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-01T22:07:05.315957Z",
+  "generated_at": "2026-04-01T23:08:34.418957Z",
   "stats": {
-    "total_alerts": 238,
+    "total_alerts": 240,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -24,7 +24,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 101,
+        "total": 102,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -48,7 +48,7 @@
         "hit_rate": null
       },
       "Financials": {
-        "total": 9,
+        "total": 10,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -68,7 +68,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 115,
+        "total": 117,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -85,11 +85,47 @@
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-04-01T22:06:15.383114Z"
+    "updated_at": "2026-04-01T23:07:49.272547Z"
   },
   "live_pnl": 0.0,
   "paper_pnl": 0.0,
   "recent_alerts": [
+    {
+      "timestamp": "2026-04-01T23:08:34.212698Z",
+      "ticker": "KXINXU-26APR02H1600-T6499.9999",
+      "title": "Will the S&P 500 be above 6499.9999 on Apr 2, 2026 at 4pm EDT?",
+      "category": "Financials",
+      "direction": "NO",
+      "edge_pct": "-81.5",
+      "implied_prob": "0.815",
+      "true_prob": "0.0",
+      "confidence": "80",
+      "suggested_live_dollars": "0.42",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "21",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-04-01T23:08:34.011628Z",
+      "ticker": "KXETHMAXMON-ETH-26APR30-250000",
+      "title": "Will ETH trimmed mean be above $2500.00 by 11:59 PM ET on Apr 30, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-26.12",
+      "implied_prob": "0.41",
+      "true_prob": "0.1488",
+      "confidence": "80",
+      "suggested_live_dollars": "0.61",
+      "suggested_paper_dollars": "49.41",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "61",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-04-01T20:10:18.396337Z",
       "ticker": "KXETHMAXY-27JAN01-6000.00",
@@ -950,42 +986,6 @@
       "suggested_paper_dollars": "19.25",
       "is_paper_bet": "1",
       "paper_entry_price_cents": "77",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-01T00:02:19.894413Z",
-      "ticker": "KXBTCMAXY-26DEC31-99999.99",
-      "title": "Will Bitcoin be above $99,999.99 by Dec 31, 2026 at 11:59 PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-20.13",
-      "implied_prob": "0.345",
-      "true_prob": "0.1437",
-      "confidence": "80",
-      "suggested_live_dollars": "0.66",
-      "suggested_paper_dollars": "39.6",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "66",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-01T00:02:19.667957Z",
-      "ticker": "KXBTCMAX100-26-DEC",
-      "title": "Will Bitcoin be above $100000.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-18.13",
-      "implied_prob": "0.325",
-      "true_prob": "0.1437",
-      "confidence": "75",
-      "suggested_live_dollars": "0.68",
-      "suggested_paper_dollars": "39.44",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "68",
       "outcome": "",
       "resolved_at": "",
       "notes": ""

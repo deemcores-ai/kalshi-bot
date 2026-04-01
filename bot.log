@@ -2252,3 +2252,28 @@ Total modelable markets evaluated: 0
 [2026-04-01 18:07:05 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
 [2026-04-01 18:07:05 ET] [INFO] ============================================================
 [2026-04-01 18:07:05 ET] [INFO] Scan job complete
+[2026-04-01 19:07:48 ET] [INFO] Scan job starting
+[2026-04-01 19:07:49 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-01 19:07:49 ET] [INFO] ============================================================
+[2026-04-01 19:07:49 ET] [INFO] Starting market scan
+[2026-04-01 19:07:49 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-01 19:07:49 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-01 19:07:57 ET] [INFO] Fetched 38311 open markets via events endpoint across 24 pages
+[2026-04-01 19:07:57 ET] [INFO] Fetched 38311 open markets
+[2026-04-01 19:07:57 ET] [INFO] Parsed 34668 valid markets
+[2026-04-01 19:07:57 ET] [INFO] Categories: {'Sports': 18446, 'Elections': 3888, 'Entertainment': 3271, 'Economics': 2556, 'Crypto': 2279, 'Politics': 1398, 'Financials': 891, 'Mentions': 778}
+[2026-04-01 19:08:04 ET] [INFO]   price model: SOL-USD spot=81.21 target=500.00 vol=47.3% T=6581.9h → P=0.000
+[2026-04-01 19:08:04 ET] [INFO]   price model: BTC-USD spot=68207.46 target=100000.00 vol=40.5% T=6581.9h → P=0.138
+[2026-04-01 19:08:04 ET] [INFO]   price model: BTC-USD spot=68207.46 target=200000.00 vol=40.5% T=6581.9h → P=0.001
+[2026-04-01 19:08:05 ET] [INFO]   price model: BTC-USD spot=68207.46 target=199999.00 vol=40.5% T=6581.9h → P=0.001
+[2026-04-01 19:08:15 ET] [INFO]   CPI model: threshold=0.2% TNX=4.32% → P=0.800
+[2026-04-01 19:08:17 ET] [INFO]   price model: ETH-USD spot=2142.63 target=2500.00 vol=52.4% T=700.9h → P=0.149
+[2026-04-01 19:08:17 ET] [INFO]   EDGE FOUND: KXETHMAXMON-ETH-26APR30-250000 | implied=41.0% true=14.9% edge=-26.1% dir=NO conf=80
+[2026-04-01 19:08:27 ET] [INFO]   price model: SPY spot=655.24 target=6500.00 vol=16.8% T=20.9h → P=0.000
+[2026-04-01 19:08:27 ET] [INFO]   EDGE FOUND: KXINXU-26APR02H1600-T6499.9999 | implied=81.5% true=0.0% edge=-81.5% dir=NO conf=80
+[2026-04-01 19:08:33 ET] [INFO] Checked 34598 markets | Modelable: 34598 | Edges found: 2
+[2026-04-01 19:08:34 ET] [INFO] [Discord] Trade alert sent: KXETHMAXMON-ETH-26APR30-250000
+[2026-04-01 19:08:34 ET] [INFO] [Discord] Trade alert sent: KXINXU-26APR02H1600-T6499.9999
+[2026-04-01 19:08:34 ET] [INFO] Scan complete — 2 alerts sent
+[2026-04-01 19:08:34 ET] [INFO] ============================================================
+[2026-04-01 19:08:34 ET] [INFO] Scan job complete
