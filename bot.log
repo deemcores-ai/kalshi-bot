@@ -2139,3 +2139,26 @@ Total modelable markets evaluated: 0
 [2026-04-01 12:34:22 ET] [INFO] Scan complete — 4 alerts sent
 [2026-04-01 12:34:22 ET] [INFO] ============================================================
 [2026-04-01 12:34:22 ET] [INFO] Scan job complete
+[2026-04-01 13:55:49 ET] [INFO] Scan job starting
+[2026-04-01 13:55:49 ET] [INFO] Kalshi API key auth OK ✅  balance: $10.00
+[2026-04-01 13:55:49 ET] [INFO] ============================================================
+[2026-04-01 13:55:49 ET] [INFO] Starting market scan
+[2026-04-01 13:55:49 ET] [INFO] Live balance: $10.00  |  Peak ever: $10.00
+[2026-04-01 13:55:49 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-01 13:56:02 ET] [INFO] Fetched 42040 open markets via events endpoint across 25 pages
+[2026-04-01 13:56:02 ET] [INFO] Fetched 42040 open markets
+[2026-04-01 13:56:02 ET] [INFO] Parsed 37336 valid markets
+[2026-04-01 13:56:02 ET] [INFO] Categories: {'Sports': 21258, 'Elections': 3887, 'Entertainment': 3205, 'Economics': 2563, 'Crypto': 2263, 'Politics': 1398, 'Financials': 914, 'Mentions': 663}
+[2026-04-01 13:56:09 ET] [INFO]   price model: SOL-USD spot=84.65 target=500.00 vol=47.2% T=6587.1h → P=0.000
+[2026-04-01 13:56:10 ET] [INFO]   price model: ETH-USD spot=2137.05 target=6000.00 vol=52.3% T=6587.1h → P=0.011
+[2026-04-01 13:56:10 ET] [INFO]   price model: BTC-USD spot=68299.93 target=100000.00 vol=40.5% T=6587.1h → P=0.139
+[2026-04-01 13:56:10 ET] [INFO]   price model: BTC-USD spot=68299.93 target=200000.00 vol=40.5% T=6587.1h → P=0.001
+[2026-04-01 13:56:10 ET] [INFO]   price model: BTC-USD spot=68299.93 target=199999.00 vol=40.5% T=6587.0h → P=0.001
+[2026-04-01 13:56:20 ET] [INFO]   CPI model: threshold=0.2% TNX=4.32% → P=0.800
+[2026-04-01 13:56:39 ET] [WARN]   wttr.in fetch error (Philadelphia): HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /Philadelphia?format=j1 (Caused by NewConnectionError("HTTPSConnection(host='wttr.in', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
+[2026-04-01 13:56:39 ET] [WARN]   wttr.in fetch error (New+York): HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /New+York?format=j1 (Caused by NewConnectionError("HTTPSConnection(host='wttr.in', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
+[2026-04-01 13:56:40 ET] [WARN]   wttr.in fetch error (Denver): HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /Denver?format=j1 (Caused by NewConnectionError("HTTPSConnection(host='wttr.in', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
+[2026-04-01 13:56:48 ET] [INFO] Checked 37261 markets | Modelable: 37261 | Edges found: 0
+[2026-04-01 13:56:48 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
+[2026-04-01 13:56:48 ET] [INFO] ============================================================
+[2026-04-01 13:56:48 ET] [INFO] Scan job complete
