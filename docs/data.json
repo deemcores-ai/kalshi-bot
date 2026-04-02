@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-02T03:35:50.760932Z",
+  "generated_at": "2026-04-02T03:52:05.700066Z",
   "stats": {
     "total_alerts": 302,
     "rated": 0,
@@ -77,7 +77,7 @@
   },
   "bankroll": {
     "live": {
-      "balance": 10.0,
+      "balance": 0.0,
       "peak": 10.0
     },
     "paper": {
@@ -85,9 +85,9 @@
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-04-02T02:46:55.192460Z"
+    "updated_at": "2026-04-02T03:51:14.467094Z"
   },
-  "live_pnl": 0.0,
+  "live_pnl": -10.0,
   "paper_pnl": 0.0,
   "recent_alerts": [
     {
