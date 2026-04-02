@@ -2508,3 +2508,31 @@ Total modelable markets evaluated: 0
 [2026-04-01 22:47:56 ET] [INFO] Scan complete — 42 alerts sent
 [2026-04-01 22:47:56 ET] [INFO] ============================================================
 [2026-04-01 22:47:56 ET] [INFO] Scan job complete
+[2026-04-01 23:35:01 ET] [INFO] Scan job starting
+[2026-04-01 23:35:01 ET] [WARN] No KALSHI_API_KEY_ID / KALSHI_PRIVATE_KEY — scanning public markets only
+[2026-04-01 23:35:01 ET] [INFO] ============================================================
+[2026-04-01 23:35:01 ET] [INFO] Starting market scan
+[2026-04-01 23:35:01 ET] [WARN] API GET /portfolio/balance → HTTP 401
+[2026-04-01 23:35:01 ET] [WARN] Could not read Kalshi balance — using cached value
+[2026-04-01 23:35:01 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-01 23:35:11 ET] [INFO] Fetched 37523 open markets via events endpoint across 25 pages
+[2026-04-01 23:35:11 ET] [INFO] Fetched 37523 open markets
+[2026-04-01 23:35:12 ET] [INFO] Parsed 33942 valid markets
+[2026-04-01 23:35:12 ET] [INFO] Categories: {'Sports': 17490, 'Elections': 3887, 'Entertainment': 3268, 'Economics': 2549, 'Crypto': 2264, 'Politics': 1402, 'Financials': 1060, 'Mentions': 665}
+[2026-04-01 23:35:19 ET] [INFO]   price model: SOL-USD spot=79.21 target=500.00 vol=47.5% T=6577.4h → P=0.000
+[2026-04-01 23:35:19 ET] [INFO]   price model: SOL-USD spot=79.21 target=200.00 vol=47.5% T=6577.4h → P=0.012
+[2026-04-01 23:35:19 ET] [INFO]   EDGE FOUND: KXSOLMAXY-27JAN01-200 | implied=17.5% true=1.2% edge=-16.3% dir=NO conf=70
+[2026-04-01 23:35:19 ET] [INFO]   price model: BTC-USD spot=66798.07 target=100000.00 vol=36.5% T=6577.4h → P=0.101
+[2026-04-01 23:35:20 ET] [INFO]   price model: BTC-USD spot=66798.07 target=200000.00 vol=36.5% T=6577.4h → P=0.000
+[2026-04-01 23:35:20 ET] [INFO]   price model: BTC-USD spot=66798.07 target=199999.00 vol=36.5% T=6577.4h → P=0.000
+[2026-04-01 23:35:28 ET] [INFO]   price model: META spot=579.23 target=76000.00 vol=42.3% T=2890.4h → P=0.000
+[2026-04-01 23:35:28 ET] [INFO]   EDGE FOUND: KXMETAHEADCOUNT-26JUL-76000 | implied=91.5% true=0.0% edge=-91.5% dir=NO conf=85
+[2026-04-01 23:35:31 ET] [INFO]   CPI model: threshold=0.2% TNX=4.32% → P=0.800
+[2026-04-01 23:35:47 ET] [WARN]   weather model: chicago no forecast for 2027-04-01
+[2026-04-01 23:35:49 ET] [INFO]   fed model: implied_rate=3.650% current≈3.605% diff=4.5bps → P=0.590
+[2026-04-01 23:35:50 ET] [INFO] Checked 33882 markets | Modelable: 33882 | Edges found: 2
+[2026-04-01 23:35:50 ET] [INFO] [Discord] Trade alert sent: KXSOLMAXY-27JAN01-200
+[2026-04-01 23:35:50 ET] [INFO] [Discord] Trade alert sent: KXMETAHEADCOUNT-26JUL-76000
+[2026-04-01 23:35:50 ET] [INFO] Scan complete — 2 alerts sent
+[2026-04-01 23:35:50 ET] [INFO] ============================================================
+[2026-04-01 23:35:50 ET] [INFO] Scan job complete
