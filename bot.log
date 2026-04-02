@@ -2556,3 +2556,30 @@ Total modelable markets evaluated: 0
 [2026-04-01 23:52:05 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
 [2026-04-01 23:52:05 ET] [INFO] ============================================================
 [2026-04-01 23:52:05 ET] [INFO] Scan job complete
+[2026-04-02 03:53:11 ET] [INFO] Scan job starting
+[2026-04-02 03:53:11 ET] [INFO] Kalshi API key auth OK ✅  balance: $0.00
+[2026-04-02 03:53:11 ET] [INFO] ============================================================
+[2026-04-02 03:53:11 ET] [INFO] Starting market scan
+[2026-04-02 03:53:11 ET] [INFO] Live balance: $0.00  |  Peak ever: $10.00
+[2026-04-02 03:53:11 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-02 03:53:20 ET] [INFO] Fetched 36573 open markets via events endpoint across 25 pages
+[2026-04-02 03:53:20 ET] [INFO] Fetched 36573 open markets
+[2026-04-02 03:53:20 ET] [INFO] Parsed 33224 valid markets
+[2026-04-02 03:53:20 ET] [INFO] Categories: {'Sports': 18054, 'Elections': 3887, 'Entertainment': 3235, 'Economics': 2533, 'Politics': 1400, 'Crypto': 1198, 'Financials': 1048, 'Mentions': 639}
+[2026-04-02 03:53:28 ET] [INFO]   price model: SOL-USD spot=79.51 target=500.00 vol=45.4% T=6573.1h → P=0.000
+[2026-04-02 03:53:29 ET] [INFO]   price model: BTC-USD spot=66867.95 target=100000.00 vol=35.7% T=6573.1h → P=0.096
+[2026-04-02 03:53:29 ET] [INFO]   price model: BTC-USD spot=66867.95 target=100000.00 vol=35.7% T=6573.1h → P=0.096
+[2026-04-02 03:53:29 ET] [INFO]   price model: BTC-USD spot=66867.95 target=200000.00 vol=35.7% T=6573.1h → P=0.000
+[2026-04-02 03:53:29 ET] [INFO]   price model: BTC-USD spot=66867.95 target=199999.00 vol=35.7% T=6573.1h → P=0.000
+[2026-04-02 03:53:31 ET] [INFO]   fed model: implied_rate=3.650% current≈3.605% diff=4.5bps → P=0.410
+[2026-04-02 03:53:31 ET] [INFO]   EDGE FOUND: KXEMERCUTS-26-T1 | implied=10.5% true=41.0% edge=+30.5% dir=YES conf=85
+[2026-04-02 03:53:41 ET] [INFO]   CPI model: threshold=0.2% TNX=4.32% → P=0.800
+[2026-04-02 03:53:44 ET] [INFO]   weather model: houston rain 2026-04-02 forecast=19% → P=0.190
+[2026-04-02 03:53:44 ET] [INFO]   EDGE FOUND: KXRAINHOUM-26APR-3 | implied=63.0% true=19.0% edge=-44.0% dir=NO conf=85
+[2026-04-02 03:54:02 ET] [INFO]   fed model: implied_rate=3.650% current≈3.605% diff=4.5bps → P=0.590
+[2026-04-02 03:54:02 ET] [INFO] Checked 33162 markets | Modelable: 33162 | Edges found: 2
+[2026-04-02 03:54:02 ET] [INFO] [Discord] Trade alert sent: KXEMERCUTS-26-T1
+[2026-04-02 03:54:03 ET] [INFO] [Discord] Trade alert sent: KXRAINHOUM-26APR-3
+[2026-04-02 03:54:03 ET] [INFO] Scan complete — 2 alerts sent
+[2026-04-02 03:54:03 ET] [INFO] ============================================================
+[2026-04-02 03:54:03 ET] [INFO] Scan job complete

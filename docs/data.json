@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-02T03:52:05.700066Z",
+  "generated_at": "2026-04-02T07:54:03.554432Z",
   "stats": {
-    "total_alerts": 302,
+    "total_alerts": 304,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -12,7 +12,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 89,
+        "total": 90,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -36,7 +36,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 47,
+        "total": 48,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -68,7 +68,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 145,
+        "total": 147,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -85,11 +85,47 @@
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-04-02T03:51:14.467094Z"
+    "updated_at": "2026-04-02T07:53:11.850907Z"
   },
   "live_pnl": -10.0,
   "paper_pnl": 0.0,
   "recent_alerts": [
+    {
+      "timestamp": "2026-04-02T07:54:03.373768Z",
+      "ticker": "KXRAINHOUM-26APR-3",
+      "title": "Rain in Houston in Apr 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-44.0",
+      "implied_prob": "0.63",
+      "true_prob": "0.19",
+      "confidence": "85",
+      "suggested_live_dollars": "0.0",
+      "suggested_paper_dollars": "20.88",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "72",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-04-02T07:54:02.934109Z",
+      "ticker": "KXEMERCUTS-26-T1",
+      "title": "Will the Fed cut rates 1 times at emergency meetings?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "30.5",
+      "implied_prob": "0.105",
+      "true_prob": "0.41",
+      "confidence": "85",
+      "suggested_live_dollars": "0.0",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "13",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-04-02T03:35:50.582585Z",
       "ticker": "KXMETAHEADCOUNT-26JUL-76000",
@@ -950,42 +986,6 @@
       "suggested_paper_dollars": "49.98",
       "is_paper_bet": "1",
       "paper_entry_price_cents": "17",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-02T00:00:35.788405Z",
-      "ticker": "KXCPIYOY-26MAR-T3.3",
-      "title": "Will the rate of CPI inflation be above 3.3% for the year ending in March 2026?",
-      "category": "Economics",
-      "direction": "YES",
-      "edge_pct": "19.19",
-      "implied_prob": "0.41",
-      "true_prob": "0.6019",
-      "confidence": "80",
-      "suggested_live_dollars": "0.42",
-      "suggested_paper_dollars": "39.9",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "42",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-02T00:00:35.558807Z",
-      "ticker": "KXCPIYOY-26MAR-T3.2",
-      "title": "Will the rate of CPI inflation be above 3.2% for the year ending in March 2026?",
-      "category": "Economics",
-      "direction": "NO",
-      "edge_pct": "-23.81",
-      "implied_prob": "0.85",
-      "true_prob": "0.6119",
-      "confidence": "80",
-      "suggested_live_dollars": "0.32",
-      "suggested_paper_dollars": "40.0",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "16",
       "outcome": "",
       "resolved_at": "",
       "notes": ""
