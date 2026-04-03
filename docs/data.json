@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-03T12:06:13.035491Z",
+  "generated_at": "2026-04-03T15:06:57.849524Z",
   "stats": {
-    "total_alerts": 397,
+    "total_alerts": 401,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -12,7 +12,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 117,
+        "total": 118,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -36,13 +36,13 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 57,
+        "total": 59,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Companies": {
-        "total": 12,
+        "total": 13,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -62,13 +62,13 @@
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 100,
+        "total": 102,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 209,
+        "total": 211,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -85,11 +85,83 @@
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-04-03T12:05:02.000582Z"
+    "updated_at": "2026-04-03T15:05:40.536519Z"
   },
   "live_pnl": -10.0,
   "paper_pnl": 0.0,
   "recent_alerts": [
+    {
+      "timestamp": "2026-04-03T15:06:57.663448Z",
+      "ticker": "KXHIGHAUS-26APR03-B87.5",
+      "title": "Will the **high temp in Austin** be 87-88\u00b0 on Apr 3, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-33.93",
+      "implied_prob": "0.545",
+      "true_prob": "0.2057",
+      "confidence": "80",
+      "suggested_live_dollars": "0.0",
+      "suggested_paper_dollars": "49.82",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "47",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-04-03T15:06:57.381671Z",
+      "ticker": "KXHIGHMIA-26APR03-B84.5",
+      "title": "Will the **high temp in Miami** be 84-85\u00b0 on Apr 3, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-20.95",
+      "implied_prob": "0.385",
+      "true_prob": "0.1755",
+      "confidence": "70",
+      "suggested_live_dollars": "0.0",
+      "suggested_paper_dollars": "39.69",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "63",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-04-03T15:06:57.025623Z",
+      "ticker": "KXFEDDECISION-26JUN-H25",
+      "title": "Will the Federal Reserve Hike rates by 25bps at their June 2026 meeting?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "52.6",
+      "implied_prob": "0.05",
+      "true_prob": "0.576",
+      "confidence": "85",
+      "suggested_live_dollars": "0.0",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "6",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-04-03T15:06:56.766786Z",
+      "ticker": "KXTESLASEMI-27JAN-5000",
+      "title": "Will Tesla Inc report above 5000 Semi Trucks Produced before Jan 2027?",
+      "category": "Companies",
+      "direction": "NO",
+      "edge_pct": "-19.5",
+      "implied_prob": "0.195",
+      "true_prob": "0.0",
+      "confidence": "75",
+      "suggested_live_dollars": "0.0",
+      "suggested_paper_dollars": "39.84",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "83",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-04-03T12:06:12.830502Z",
       "ticker": "FEDHIKE-27DEC31",
@@ -914,78 +986,6 @@
       "suggested_paper_dollars": "19.58",
       "is_paper_bet": "1",
       "paper_entry_price_cents": "89",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-03T05:52:33.820818Z",
-      "ticker": "KXETHMAXY-27JAN01-4750.00",
-      "title": "Will Ethereum reach above $4750.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-10.98",
-      "implied_prob": "0.135",
-      "true_prob": "0.0252",
-      "confidence": "63",
-      "suggested_live_dollars": "0.0",
-      "suggested_paper_dollars": "19.14",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "87",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-03T05:52:33.678338Z",
-      "ticker": "KXETHMAXY-27JAN01-4500.00",
-      "title": "Will Ethereum reach above $4500.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-12.14",
-      "implied_prob": "0.155",
-      "true_prob": "0.0336",
-      "confidence": "68",
-      "suggested_live_dollars": "0.0",
-      "suggested_paper_dollars": "19.55",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "85",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-03T05:52:33.407467Z",
-      "ticker": "KXETHMAXY-27JAN01-4250.00",
-      "title": "Will Ethereum reach above $4250.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-14.01",
-      "implied_prob": "0.185",
-      "true_prob": "0.0449",
-      "confidence": "63",
-      "suggested_live_dollars": "0.0",
-      "suggested_paper_dollars": "19.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "82",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-03T05:52:33.273004Z",
-      "ticker": "KXETHMAXY-27JAN01-4000.00",
-      "title": "Will Ethereum reach above $4000.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-15.49",
-      "implied_prob": "0.215",
-      "true_prob": "0.0601",
-      "confidence": "75",
-      "suggested_live_dollars": "0.0",
-      "suggested_paper_dollars": "39.5",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "79",
       "outcome": "",
       "resolved_at": "",
       "notes": ""

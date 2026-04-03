@@ -3041,3 +3041,36 @@ Total modelable markets evaluated: 0
 [2026-04-03 08:06:12 ET] [INFO] Scan complete — 7 alerts sent
 [2026-04-03 08:06:12 ET] [INFO] ============================================================
 [2026-04-03 08:06:12 ET] [INFO] Scan job complete
+[2026-04-03 11:05:40 ET] [INFO] Scan job starting
+[2026-04-03 11:05:40 ET] [INFO] Kalshi API key auth OK ✅  balance: $0.00
+[2026-04-03 11:05:40 ET] [INFO] ============================================================
+[2026-04-03 11:05:40 ET] [INFO] Starting market scan
+[2026-04-03 11:05:40 ET] [INFO] Live balance: $0.00  |  Peak ever: $10.00
+[2026-04-03 11:05:40 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-03 11:05:52 ET] [INFO] Fetched 40495 open markets via events endpoint across 26 pages
+[2026-04-03 11:05:52 ET] [INFO] Fetched 40495 open markets
+[2026-04-03 11:05:52 ET] [INFO] Parsed 37057 valid markets
+[2026-04-03 11:05:52 ET] [INFO] Categories: {'Sports': 20786, 'Elections': 3926, 'Entertainment': 3521, 'Economics': 2468, 'Crypto': 1672, 'Politics': 1419, 'Financials': 995, 'Mentions': 808}
+[2026-04-03 11:06:02 ET] [INFO]   price model: TSLA spot=360.59 target=5000.00 vol=40.1% T=6551.9h → P=0.000
+[2026-04-03 11:06:02 ET] [INFO]   EDGE FOUND: KXTESLASEMI-27JAN-5000 | implied=19.5% true=0.0% edge=-19.5% dir=NO conf=75
+[2026-04-03 11:06:04 ET] [INFO]   price model: SOL-USD spot=80.23 target=500.00 vol=45.7% T=6541.9h → P=0.000
+[2026-04-03 11:06:04 ET] [INFO]   price model: ETH-USD spot=2054.23 target=6000.00 vol=48.6% T=6541.9h → P=0.005
+[2026-04-03 11:06:05 ET] [INFO]   price model: BTC-USD spot=66924.92 target=100000.00 vol=35.0% T=6541.9h → P=0.092
+[2026-04-03 11:06:05 ET] [INFO]   price model: BTC-USD spot=66924.92 target=200000.00 vol=35.0% T=6541.9h → P=0.000
+[2026-04-03 11:06:05 ET] [INFO]   price model: BTC-USD spot=66924.92 target=199999.00 vol=35.0% T=6541.9h → P=0.000
+[2026-04-03 11:06:21 ET] [INFO]   fed model: implied_rate=3.645% current≈3.607% diff=3.8bps → P=0.576
+[2026-04-03 11:06:21 ET] [INFO]   EDGE FOUND: KXFEDDECISION-26JUN-H25 | implied=5.0% true=57.6% edge=+52.6% dir=YES conf=85
+[2026-04-03 11:06:22 ET] [INFO]   CPI model: threshold=0.2% TNX=4.31% → P=0.800
+[2026-04-03 11:06:34 ET] [INFO]   CPI model: threshold=2.6% TNX=4.31% → P=0.671
+[2026-04-03 11:06:43 ET] [INFO]   weather model: miami max=82.0°F target=[84,85]°F days_out=0 σ=3.5°F → P=0.175
+[2026-04-03 11:06:43 ET] [INFO]   EDGE FOUND: KXHIGHMIA-26APR03-B84.5 | implied=38.5% true=17.5% edge=-21.0% dir=NO conf=70
+[2026-04-03 11:06:44 ET] [INFO]   weather model: austin max=89.0°F target=[87,88]°F days_out=0 σ=3.5°F → P=0.206
+[2026-04-03 11:06:44 ET] [INFO]   EDGE FOUND: KXHIGHAUS-26APR03-B87.5 | implied=54.5% true=20.6% edge=-33.9% dir=NO conf=80
+[2026-04-03 11:06:56 ET] [INFO] Checked 36985 markets | Modelable: 36985 | Edges found: 4
+[2026-04-03 11:06:56 ET] [INFO] [Discord] Trade alert sent: KXTESLASEMI-27JAN-5000
+[2026-04-03 11:06:57 ET] [INFO] [Discord] Trade alert sent: KXFEDDECISION-26JUN-H25
+[2026-04-03 11:06:57 ET] [INFO] [Discord] Trade alert sent: KXHIGHMIA-26APR03-B84.5
+[2026-04-03 11:06:57 ET] [INFO] [Discord] Trade alert sent: KXHIGHAUS-26APR03-B87.5
+[2026-04-03 11:06:57 ET] [INFO] Scan complete — 4 alerts sent
+[2026-04-03 11:06:57 ET] [INFO] ============================================================
+[2026-04-03 11:06:57 ET] [INFO] Scan job complete
