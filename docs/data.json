@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-03T15:06:57.849524Z",
+  "generated_at": "2026-04-03T17:12:21.077427Z",
   "stats": {
-    "total_alerts": 401,
+    "total_alerts": 402,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -36,7 +36,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 59,
+        "total": 60,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -56,7 +56,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 88,
+        "total": 89,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -85,11 +85,29 @@
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-04-03T15:05:40.536519Z"
+    "updated_at": "2026-04-03T17:11:08.148348Z"
   },
   "live_pnl": -10.0,
   "paper_pnl": 0.0,
   "recent_alerts": [
+    {
+      "timestamp": "2026-04-03T17:12:20.887428Z",
+      "ticker": "KXHIGHNY-26APR03-B65.5",
+      "title": "Will the **high temp in NYC** be 65-66\u00b0 on Apr 3, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-11.95",
+      "implied_prob": "0.295",
+      "true_prob": "0.1755",
+      "confidence": "63",
+      "suggested_live_dollars": "0.0",
+      "suggested_paper_dollars": "19.88",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "71",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-04-03T15:06:57.663448Z",
       "ticker": "KXHIGHAUS-26APR03-B87.5",
@@ -968,24 +986,6 @@
       "suggested_paper_dollars": "49.91",
       "is_paper_bet": "1",
       "paper_entry_price_cents": "23",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-03T05:52:34.028063Z",
-      "ticker": "KXETHMAXY-27JAN01-5000.00",
-      "title": "Will Ethereum reach above $5000.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-9.61",
-      "implied_prob": "0.115",
-      "true_prob": "0.0189",
-      "confidence": "63",
-      "suggested_live_dollars": "0.0",
-      "suggested_paper_dollars": "19.58",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "89",
       "outcome": "",
       "resolved_at": "",
       "notes": ""
