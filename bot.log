@@ -3100,3 +3100,29 @@ Total modelable markets evaluated: 0
 [2026-04-03 13:12:20 ET] [INFO] Scan complete — 1 alerts sent
 [2026-04-03 13:12:20 ET] [INFO] ============================================================
 [2026-04-03 13:12:20 ET] [INFO] Scan job complete
+[2026-04-03 15:30:16 ET] [INFO] Scan job starting
+[2026-04-03 15:30:16 ET] [INFO] Kalshi API key auth OK ✅  balance: $0.00
+[2026-04-03 15:30:16 ET] [INFO] ============================================================
+[2026-04-03 15:30:16 ET] [INFO] Starting market scan
+[2026-04-03 15:30:17 ET] [INFO] Live balance: $0.00  |  Peak ever: $10.00
+[2026-04-03 15:30:17 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-03 15:30:29 ET] [INFO] Fetched 42583 open markets via events endpoint across 28 pages
+[2026-04-03 15:30:29 ET] [INFO] Fetched 42583 open markets
+[2026-04-03 15:30:29 ET] [INFO] Parsed 38644 valid markets
+[2026-04-03 15:30:29 ET] [INFO] Categories: {'Sports': 21884, 'Elections': 3927, 'Entertainment': 3805, 'Economics': 2477, 'Crypto': 1704, 'Politics': 1428, 'Financials': 1053, 'Mentions': 874}
+[2026-04-03 15:30:41 ET] [INFO]   price model: SOL-USD spot=80.09 target=500.00 vol=45.7% T=6537.5h → P=0.000
+[2026-04-03 15:30:41 ET] [INFO]   price model: ETH-USD spot=2049.28 target=6000.00 vol=48.6% T=6537.5h → P=0.005
+[2026-04-03 15:30:42 ET] [INFO]   price model: BTC-USD spot=66781.32 target=100000.00 vol=35.0% T=6537.5h → P=0.091
+[2026-04-03 15:30:42 ET] [INFO]   price model: BTC-USD spot=66781.32 target=200000.00 vol=35.0% T=6537.5h → P=0.000
+[2026-04-03 15:30:42 ET] [INFO]   price model: BTC-USD spot=66781.32 target=199999.00 vol=35.0% T=6537.5h → P=0.000
+[2026-04-03 15:30:59 ET] [INFO]   CPI model: threshold=0.2% TNX=4.31% → P=0.800
+[2026-04-03 15:31:11 ET] [INFO]   CPI model: threshold=2.6% TNX=4.31% → P=0.671
+[2026-04-03 15:31:22 ET] [INFO]   weather model: philadelphia can't parse temp condition from title
+[2026-04-03 15:31:23 ET] [INFO]   weather model: nyc can't parse temp condition from title
+[2026-04-03 15:31:24 ET] [INFO]   weather model: austin max=89.0°F target=[85,86]°F days_out=0 σ=3.5°F → P=0.138
+[2026-04-03 15:31:24 ET] [INFO]   EDGE FOUND: KXHIGHAUS-26APR03-B85.5 | implied=63.5% true=13.8% edge=-49.7% dir=NO conf=80
+[2026-04-03 15:31:38 ET] [INFO] Checked 38567 markets | Modelable: 38567 | Edges found: 1
+[2026-04-03 15:31:38 ET] [INFO] [Discord] Trade alert sent: KXHIGHAUS-26APR03-B85.5
+[2026-04-03 15:31:38 ET] [INFO] Scan complete — 1 alerts sent
+[2026-04-03 15:31:38 ET] [INFO] ============================================================
+[2026-04-03 15:31:39 ET] [INFO] Scan job complete
