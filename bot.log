@@ -3584,3 +3584,25 @@ Total modelable markets evaluated: 0
 [2026-04-04 15:23:27 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
 [2026-04-04 15:23:27 ET] [INFO] ============================================================
 [2026-04-04 15:23:27 ET] [INFO] Scan job complete
+[2026-04-04 16:01:55 ET] [INFO] Scan job starting
+[2026-04-04 16:01:55 ET] [INFO] Kalshi API key auth OK ✅  balance: $0.00
+[2026-04-04 16:01:55 ET] [INFO] ============================================================
+[2026-04-04 16:01:55 ET] [INFO] Starting market scan
+[2026-04-04 16:01:55 ET] [INFO] Live balance: $0.00  |  Peak ever: $10.00
+[2026-04-04 16:01:55 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-04 16:02:07 ET] [INFO] Fetched 43236 open markets via events endpoint across 27 pages
+[2026-04-04 16:02:07 ET] [INFO] Fetched 43236 open markets
+[2026-04-04 16:02:07 ET] [INFO] Parsed 39038 valid markets
+[2026-04-04 16:02:07 ET] [INFO] Categories: {'Sports': 21605, 'Elections': 3998, 'Entertainment': 3914, 'Economics': 2626, 'Financials': 1687, 'Politics': 1441, 'Crypto': 1421, 'Mentions': 846}
+[2026-04-04 16:02:20 ET] [INFO]   price model: SOL-USD spot=80.86 target=500.00 vol=44.0% T=6513.0h → P=0.000
+[2026-04-04 16:02:21 ET] [INFO]   price model: BTC-USD spot=67287.53 target=100000.00 vol=33.2% T=6513.0h → P=0.083
+[2026-04-04 16:02:21 ET] [INFO]   price model: BTC-USD spot=67287.53 target=200000.00 vol=33.2% T=6513.0h → P=0.000
+[2026-04-04 16:02:21 ET] [INFO]   price model: BTC-USD spot=67287.53 target=199999.00 vol=33.2% T=6512.9h → P=0.000
+[2026-04-04 16:02:22 ET] [INFO]   fed model: implied_rate=3.645% current≈3.607% diff=3.8bps → P=0.424
+[2026-04-04 16:02:41 ET] [INFO]   CPI model: threshold=0.2% TNX=4.31% → P=0.800
+[2026-04-04 16:03:07 ET] [INFO]   weather model: denver can't parse temp condition from title
+[2026-04-04 16:03:23 ET] [INFO]   fed model: implied_rate=3.645% current≈3.607% diff=3.8bps → P=0.576
+[2026-04-04 16:03:23 ET] [INFO] Checked 38965 markets | Modelable: 38965 | Edges found: 0
+[2026-04-04 16:03:23 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
+[2026-04-04 16:03:23 ET] [INFO] ============================================================
+[2026-04-04 16:03:23 ET] [INFO] Scan job complete

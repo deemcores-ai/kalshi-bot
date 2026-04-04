@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-04T19:23:28.011124Z",
+  "generated_at": "2026-04-04T20:03:24.056964Z",
   "stats": {
     "total_alerts": 481,
     "rated": 0,
@@ -85,7 +85,7 @@
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-04-04T19:22:00.740491Z"
+    "updated_at": "2026-04-04T20:01:55.690458Z"
   },
   "live_pnl": -10.0,
   "paper_pnl": 0.0,
