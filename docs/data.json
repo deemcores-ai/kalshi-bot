@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-04T14:05:14.625638Z",
+  "generated_at": "2026-04-04T15:53:36.975613Z",
   "stats": {
-    "total_alerts": 477,
+    "total_alerts": 479,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -36,7 +36,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 67,
+        "total": 69,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -68,7 +68,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 253,
+        "total": 255,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -85,11 +85,47 @@
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-04-04T14:03:44.548306Z"
+    "updated_at": "2026-04-04T15:52:10.484389Z"
   },
   "live_pnl": -10.0,
   "paper_pnl": 0.0,
   "recent_alerts": [
+    {
+      "timestamp": "2026-04-04T15:53:36.773428Z",
+      "ticker": "KXHIGHAUS-26APR04-B77.5",
+      "title": "Will the **high temp in Austin** be 77-78\u00b0 on Apr 4, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-71.93",
+      "implied_prob": "0.925",
+      "true_prob": "0.2057",
+      "confidence": "80",
+      "suggested_live_dollars": "0.0",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "8",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-04-04T15:53:36.539521Z",
+      "ticker": "KXHIGHCHI-26APR04-B59.5",
+      "title": "Will the high temp in Chicago be 59-60\u00b0 on Apr 4, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-84.23",
+      "implied_prob": "0.855",
+      "true_prob": "0.0127",
+      "confidence": "80",
+      "suggested_live_dollars": "0.0",
+      "suggested_paper_dollars": "49.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "15",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-04-04T14:05:14.418367Z",
       "ticker": "KXHIGHMIA-26APR04-B84.5",
@@ -950,42 +986,6 @@
       "suggested_paper_dollars": "49.91",
       "is_paper_bet": "1",
       "paper_entry_price_cents": "23",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-04T05:13:18.704815Z",
-      "ticker": "KXETHMAXY-27JAN01-6000.00",
-      "title": "Will Ethereum reach above $6000.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-9.06",
-      "implied_prob": "0.095",
-      "true_prob": "0.0044",
-      "confidence": "68",
-      "suggested_live_dollars": "0.0",
-      "suggested_paper_dollars": "19.11",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "91",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-04T05:13:18.332959Z",
-      "ticker": "KXETHMAXY-27JAN01-5000.00",
-      "title": "Will Ethereum reach above $5000.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-10.02",
-      "implied_prob": "0.115",
-      "true_prob": "0.0148",
-      "confidence": "63",
-      "suggested_live_dollars": "0.0",
-      "suggested_paper_dollars": "19.58",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "89",
       "outcome": "",
       "resolved_at": "",
       "notes": ""
