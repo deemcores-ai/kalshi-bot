@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-04T05:16:44.522995Z",
+  "generated_at": "2026-04-04T11:57:17.979231Z",
   "stats": {
-    "total_alerts": 474,
+    "total_alerts": 475,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -12,7 +12,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 138,
+        "total": 139,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -68,7 +68,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 251,
+        "total": 252,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -85,11 +85,29 @@
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-04-04T05:15:23.810494Z"
+    "updated_at": "2026-04-04T11:55:51.158252Z"
   },
   "live_pnl": -10.0,
   "paper_pnl": 0.0,
   "recent_alerts": [
+    {
+      "timestamp": "2026-04-04T11:57:17.772504Z",
+      "ticker": "KXCPICOREYOY-26MAR-T2.7",
+      "title": "Will the rate of core CPI inflation be above 2.7% for the year ending in March 2026?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "45.63",
+      "implied_prob": "0.205",
+      "true_prob": "0.6613",
+      "confidence": "85",
+      "suggested_live_dollars": "0.0",
+      "suggested_paper_dollars": "49.91",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "23",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-04-04T05:13:27.356036Z",
       "ticker": "FEDHIKE-26DEC31",
@@ -968,24 +986,6 @@
       "suggested_paper_dollars": "19.32",
       "is_paper_bet": "1",
       "paper_entry_price_cents": "84",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-04T05:13:17.805879Z",
-      "ticker": "KXETHMAXY-27JAN01-4250.00",
-      "title": "Will Ethereum reach above $4250.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-13.73",
-      "implied_prob": "0.175",
-      "true_prob": "0.0377",
-      "confidence": "63",
-      "suggested_live_dollars": "0.0",
-      "suggested_paper_dollars": "19.92",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "83",
       "outcome": "",
       "resolved_at": "",
       "notes": ""
