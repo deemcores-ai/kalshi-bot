@@ -545,3 +545,4 @@ timestamp,ticker,title,category,direction,edge_pct,implied_prob,true_prob,confid
 2026-04-05T00:05:35.452971Z,KXCPIYOY-26MAR-T3.4,Will the rate of CPI inflation be above 3.4% for the year ending in March 2026?,Economics,YES,42.63,0.165,0.5913,85,0.0,49.98,1,17,,,
 2026-04-05T00:05:35.598208Z,FEDHIKE-27JUN30,"Will the Federal Reserve hike rates by June 30, 2027?",Economics,YES,25.1,0.325,0.576,85,0.0,49.98,1,34,,,
 2026-04-05T00:05:35.734711Z,FEDHIKE-26DEC31,"Will the Federal Reserve hike rates by December 31, 2026?",Economics,YES,40.1,0.175,0.576,90,0.0,49.86,1,18,,,
+2026-04-05T05:58:18.191210Z,KXCPIYOY-26MAR-T3.1,Will the rate of CPI inflation be above 3.1% for the year ending in March 2026?,Economics,NO,-31.37,0.935,0.6213,95,0.0,49.98,1,7,,,
