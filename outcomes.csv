@@ -546,3 +546,5 @@ timestamp,ticker,title,category,direction,edge_pct,implied_prob,true_prob,confid
 2026-04-05T00:05:35.598208Z,FEDHIKE-27JUN30,"Will the Federal Reserve hike rates by June 30, 2027?",Economics,YES,25.1,0.325,0.576,85,0.0,49.98,1,34,,,
 2026-04-05T00:05:35.734711Z,FEDHIKE-26DEC31,"Will the Federal Reserve hike rates by December 31, 2026?",Economics,YES,40.1,0.175,0.576,90,0.0,49.86,1,18,,,
 2026-04-05T05:58:18.191210Z,KXCPIYOY-26MAR-T3.1,Will the rate of CPI inflation be above 3.1% for the year ending in March 2026?,Economics,NO,-31.37,0.935,0.6213,95,0.0,49.98,1,7,,,
+2026-04-05T11:58:35.305394Z,KXUSGASCPI-26APR10-T320,Will Gasoline (All Types) in U.S. City Average for March 2026 be above 320?,Economics,NO,-94.5,0.945,0.0,85,0.0,49.95,1,9,,,
+2026-04-05T11:58:35.587894Z,KXHIGHMIA-26APR05-B83.5,"Will the **high temp in Miami** be 83-84° on Apr 5, 2026?",Climate and Weather,NO,-22.93,0.435,0.2057,70,0.0,39.9,1,57,,,

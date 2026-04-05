@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-05T05:58:18.390097Z",
+  "generated_at": "2026-04-05T11:58:35.779765Z",
   "stats": {
-    "total_alerts": 547,
+    "total_alerts": 549,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -12,7 +12,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 160,
+        "total": 161,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -36,7 +36,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 71,
+        "total": 72,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -62,13 +62,13 @@
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 133,
+        "total": 134,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 292,
+        "total": 293,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -85,11 +85,47 @@
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-04-05T05:56:43.159240Z"
+    "updated_at": "2026-04-05T11:57:02.168534Z"
   },
   "live_pnl": -10.0,
   "paper_pnl": 0.0,
   "recent_alerts": [
+    {
+      "timestamp": "2026-04-05T11:58:35.587894Z",
+      "ticker": "KXHIGHMIA-26APR05-B83.5",
+      "title": "Will the **high temp in Miami** be 83-84\u00b0 on Apr 5, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-22.93",
+      "implied_prob": "0.435",
+      "true_prob": "0.2057",
+      "confidence": "70",
+      "suggested_live_dollars": "0.0",
+      "suggested_paper_dollars": "39.9",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "57",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-04-05T11:58:35.305394Z",
+      "ticker": "KXUSGASCPI-26APR10-T320",
+      "title": "Will Gasoline (All Types) in U.S. City Average for March 2026 be above 320?",
+      "category": "Economics",
+      "direction": "NO",
+      "edge_pct": "-94.5",
+      "implied_prob": "0.945",
+      "true_prob": "0.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.0",
+      "suggested_paper_dollars": "49.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "9",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-04-05T05:58:18.191210Z",
       "ticker": "KXCPIYOY-26MAR-T3.1",
@@ -950,42 +986,6 @@
       "suggested_paper_dollars": "19.78",
       "is_paper_bet": "1",
       "paper_entry_price_cents": "86",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-05T00:05:24.737054Z",
-      "ticker": "KXETHMAXY-27JAN01-4500.00",
-      "title": "Will Ethereum reach above $4500.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-13.66",
-      "implied_prob": "0.165",
-      "true_prob": "0.0284",
-      "confidence": "68",
-      "suggested_live_dollars": "0.0",
-      "suggested_paper_dollars": "19.32",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "84",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-05T00:05:24.520964Z",
-      "ticker": "KXETHMAXY-27JAN01-4250.00",
-      "title": "Will Ethereum reach above $4250.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-14.63",
-      "implied_prob": "0.185",
-      "true_prob": "0.0387",
-      "confidence": "63",
-      "suggested_live_dollars": "0.0",
-      "suggested_paper_dollars": "19.68",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "82",
       "outcome": "",
       "resolved_at": "",
       "notes": ""
