@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-05T20:03:35.754564Z",
+  "generated_at": "2026-04-05T21:55:01.609294Z",
   "stats": {
-    "total_alerts": 552,
+    "total_alerts": 554,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -36,7 +36,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 73,
+        "total": 75,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -62,13 +62,13 @@
         "hit_rate": null
       },
       "medium (15-25%)": {
-        "total": 134,
+        "total": 135,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 296,
+        "total": 297,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -85,11 +85,47 @@
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-04-05T20:02:07.782781Z"
+    "updated_at": "2026-04-05T21:53:21.986974Z"
   },
   "live_pnl": -10.0,
   "paper_pnl": 0.0,
   "recent_alerts": [
+    {
+      "timestamp": "2026-04-05T21:55:01.411372Z",
+      "ticker": "KXHIGHAUS-26APR05-B64.5",
+      "title": "Will the **high temp in Austin** be 64-65\u00b0 on Apr 5, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-48.17",
+      "implied_prob": "0.62",
+      "true_prob": "0.1383",
+      "confidence": "80",
+      "suggested_live_dollars": "0.0",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "39",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-04-05T21:55:01.098251Z",
+      "ticker": "KXHIGHDEN-26APR05-B66.5",
+      "title": "Will the **high temp in Denver** be 66-67\u00b0 on Apr 5, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-17.43",
+      "implied_prob": "0.38",
+      "true_prob": "0.2057",
+      "confidence": "70",
+      "suggested_live_dollars": "0.0",
+      "suggested_paper_dollars": "39.44",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "68",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-04-05T19:26:45.870169Z",
       "ticker": "KXBRENTD-26APR0518-T113",
@@ -950,42 +986,6 @@
       "suggested_paper_dollars": "49.88",
       "is_paper_bet": "1",
       "paper_entry_price_cents": "43",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-05T00:05:25.721255Z",
-      "ticker": "KXBTCMINY-27JAN01-55000.00",
-      "title": "Will Bitcoin be below $55000.00 by Jan 1, 2027 at 12:00am ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-43.68",
-      "implied_prob": "0.68",
-      "true_prob": "0.2432",
-      "confidence": "90",
-      "suggested_live_dollars": "0.0",
-      "suggested_paper_dollars": "49.83",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "33",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-05T00:05:25.575659Z",
-      "ticker": "KXBTCMINY-27JAN01-60000.00",
-      "title": "Will Bitcoin be below $60000.00 by Jan 1, 2027 at 12:00am ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-43.88",
-      "implied_prob": "0.785",
-      "true_prob": "0.3462",
-      "confidence": "90",
-      "suggested_live_dollars": "0.0",
-      "suggested_paper_dollars": "49.94",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "22",
       "outcome": "",
       "resolved_at": "",
       "notes": ""

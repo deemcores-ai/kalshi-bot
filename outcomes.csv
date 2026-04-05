@@ -551,3 +551,5 @@ timestamp,ticker,title,category,direction,edge_pct,implied_prob,true_prob,confid
 2026-04-05T15:54:40.946144Z,KXEMERCUTS-26-T1,Will the Fed cut rates 1 times at emergency meetings?,Economics,YES,32.9,0.095,0.424,85,0.0,49.92,1,12,,,
 2026-04-05T19:26:45.540871Z,KXHIGHCHI-26APR05-B52.5,"Will the high temp in Chicago be 52-53° on Apr 5, 2026?",Climate and Weather,NO,-58.24,0.65,0.0676,80,0.0,50.0,1,40,,,
 2026-04-05T19:26:45.870169Z,KXBRENTD-26APR0518-T113,"Will the brent crude oil close price be above $113 on Apr 5, 2026 at 6pm EDT?",Financials,NO,-26.89,0.575,0.3061,70,0.0,49.95,1,45,,,
+2026-04-05T21:55:01.098251Z,KXHIGHDEN-26APR05-B66.5,"Will the **high temp in Denver** be 66-67° on Apr 5, 2026?",Climate and Weather,NO,-17.43,0.38,0.2057,70,0.0,39.44,1,68,,,
+2026-04-05T21:55:01.411372Z,KXHIGHAUS-26APR05-B64.5,"Will the **high temp in Austin** be 64-65° on Apr 5, 2026?",Climate and Weather,NO,-48.17,0.62,0.1383,80,0.0,49.92,1,39,,,
