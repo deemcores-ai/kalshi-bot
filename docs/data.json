@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-05T14:07:30.372958Z",
+  "generated_at": "2026-04-05T15:54:41.144153Z",
   "stats": {
-    "total_alerts": 549,
+    "total_alerts": 550,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -12,7 +12,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 161,
+        "total": 162,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -68,7 +68,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 293,
+        "total": 294,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -85,11 +85,29 @@
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-04-05T14:05:54.911216Z"
+    "updated_at": "2026-04-05T15:53:05.592558Z"
   },
   "live_pnl": -10.0,
   "paper_pnl": 0.0,
   "recent_alerts": [
+    {
+      "timestamp": "2026-04-05T15:54:40.946144Z",
+      "ticker": "KXEMERCUTS-26-T1",
+      "title": "Will the Fed cut rates 1 times at emergency meetings?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "32.9",
+      "implied_prob": "0.095",
+      "true_prob": "0.424",
+      "confidence": "85",
+      "suggested_live_dollars": "0.0",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "12",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-04-05T11:58:35.587894Z",
       "ticker": "KXHIGHMIA-26APR05-B83.5",
@@ -968,24 +986,6 @@
       "suggested_paper_dollars": "19.58",
       "is_paper_bet": "1",
       "paper_entry_price_cents": "89",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-05T00:05:24.883529Z",
-      "ticker": "KXETHMAXY-27JAN01-4750.00",
-      "title": "Will Ethereum reach above $4750.00 by Jan 1, 2027 at 12:00AM?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-12.42",
-      "implied_prob": "0.145",
-      "true_prob": "0.0208",
-      "confidence": "63",
-      "suggested_live_dollars": "0.0",
-      "suggested_paper_dollars": "19.78",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "86",
       "outcome": "",
       "resolved_at": "",
       "notes": ""
