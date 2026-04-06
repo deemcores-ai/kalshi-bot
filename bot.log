@@ -4467,3 +4467,36 @@ Total modelable markets evaluated: 0
 [2026-04-06 15:59:49 ET] [INFO] Scan complete — 1 alerts sent
 [2026-04-06 15:59:49 ET] [INFO] ============================================================
 [2026-04-06 15:59:49 ET] [INFO] Scan job complete
+[2026-04-06 17:53:24 ET] [INFO] Scan job starting
+[2026-04-06 17:53:24 ET] [INFO] Kalshi API key auth OK ✅  balance: $0.00
+[2026-04-06 17:53:24 ET] [INFO] ============================================================
+[2026-04-06 17:53:24 ET] [INFO] Starting market scan
+[2026-04-06 17:53:24 ET] [INFO] Live balance: $0.00  |  Peak ever: $10.00
+[2026-04-06 17:53:24 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-06 17:53:34 ET] [INFO] Fetched 41121 open markets via events endpoint across 24 pages
+[2026-04-06 17:53:34 ET] [INFO] Fetched 41121 open markets
+[2026-04-06 17:53:34 ET] [INFO] Parsed 38552 valid markets
+[2026-04-06 17:53:34 ET] [INFO] Categories: {'Sports': 20944, 'Elections': 3978, 'Entertainment': 3892, 'Economics': 2632, 'Crypto': 2076, 'Politics': 1434, 'Financials': 1421, 'Mentions': 621}
+[2026-04-06 17:53:50 ET] [INFO]   price model: BTC-USD spot=69562.62 target=100000.00 vol=33.3% T=6463.1h → P=0.102
+[2026-04-06 17:53:50 ET] [INFO]   price model: BTC-USD spot=69562.62 target=200000.00 vol=33.3% T=6463.1h → P=0.000
+[2026-04-06 17:53:50 ET] [INFO]   price model: BTC-USD spot=69562.62 target=199999.00 vol=33.3% T=6463.1h → P=0.000
+[2026-04-06 17:53:52 ET] [INFO]   fed model: implied_rate=3.645% current≈3.623% diff=2.2bps → P=0.456
+[2026-04-06 17:53:54 ET] [INFO]   fed model: implied_rate=3.645% current≈3.623% diff=2.2bps → P=0.456
+[2026-04-06 17:53:54 ET] [INFO]   EDGE FOUND: KXEMERCUTS-26-T1 | implied=9.5% true=45.6% edge=+36.1% dir=YES conf=85
+[2026-04-06 17:54:14 ET] [INFO]   CPI model: threshold=0.2% TNX=4.34% → P=0.800
+[2026-04-06 17:54:18 ET] [INFO]   weather model: san francisco rain 2026-04-06 forecast=0% → P=0.020
+[2026-04-06 17:54:18 ET] [INFO]   EDGE FOUND: KXRAINSFOM-26APR-1 | implied=31.5% true=2.0% edge=-29.5% dir=NO conf=85
+[2026-04-06 17:54:19 ET] [INFO]   weather model: los angeles rain 2026-04-06 forecast=0% → P=0.020
+[2026-04-06 17:54:19 ET] [INFO]   EDGE FOUND: KXRAINLAXM-26APR-1 | implied=55.0% true=2.0% edge=-53.0% dir=NO conf=85
+[2026-04-06 17:54:37 ET] [INFO]   CPI model: threshold=3.3% TNX=4.34% → P=0.604
+[2026-04-06 17:54:45 ET] [INFO]   weather model: denver max=71.0°F target=[65,66]°F days_out=0 σ=3.5°F → P=0.068
+[2026-04-06 17:54:45 ET] [INFO]   EDGE FOUND: KXHIGHDEN-26APR06-B65.5 | implied=83.5% true=6.8% edge=-76.7% dir=NO conf=80
+[2026-04-06 17:55:01 ET] [INFO]   fed model: implied_rate=3.645% current≈3.623% diff=2.2bps → P=0.544
+[2026-04-06 17:55:01 ET] [INFO] Checked 38481 markets | Modelable: 38481 | Edges found: 4
+[2026-04-06 17:55:01 ET] [INFO] [Discord] Trade alert sent: KXEMERCUTS-26-T1
+[2026-04-06 17:55:02 ET] [INFO] [Discord] Trade alert sent: KXRAINSFOM-26APR-1
+[2026-04-06 17:55:02 ET] [INFO] [Discord] Trade alert sent: KXRAINLAXM-26APR-1
+[2026-04-06 17:55:02 ET] [INFO] [Discord] Trade alert sent: KXHIGHDEN-26APR06-B65.5
+[2026-04-06 17:55:02 ET] [INFO] Scan complete — 4 alerts sent
+[2026-04-06 17:55:02 ET] [INFO] ============================================================
+[2026-04-06 17:55:02 ET] [INFO] Scan job complete

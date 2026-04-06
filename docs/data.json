@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-06T19:59:49.970718Z",
+  "generated_at": "2026-04-06T21:55:02.944296Z",
   "stats": {
-    "total_alerts": 630,
+    "total_alerts": 634,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -12,7 +12,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 181,
+        "total": 182,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -36,7 +36,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 81,
+        "total": 84,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -68,7 +68,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 338,
+        "total": 342,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -85,11 +85,83 @@
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-04-06T19:58:06.370342Z"
+    "updated_at": "2026-04-06T21:53:24.415061Z"
   },
   "live_pnl": -10.0,
   "paper_pnl": 0.0,
   "recent_alerts": [
+    {
+      "timestamp": "2026-04-06T21:55:02.767387Z",
+      "ticker": "KXHIGHDEN-26APR06-B65.5",
+      "title": "Will the **high temp in Denver** be 65-66\u00b0 on Apr 6, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-76.74",
+      "implied_prob": "0.835",
+      "true_prob": "0.0676",
+      "confidence": "80",
+      "suggested_live_dollars": "0.0",
+      "suggested_paper_dollars": "49.98",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "17",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-04-06T21:55:02.206192Z",
+      "ticker": "KXRAINLAXM-26APR-1",
+      "title": "Rain in Los Angeles in Apr 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-53.0",
+      "implied_prob": "0.55",
+      "true_prob": "0.02",
+      "confidence": "85",
+      "suggested_live_dollars": "0.0",
+      "suggested_paper_dollars": "49.82",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "47",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-04-06T21:55:02.048129Z",
+      "ticker": "KXRAINSFOM-26APR-1",
+      "title": "Rain in San Francisco in Apr 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-29.5",
+      "implied_prob": "0.315",
+      "true_prob": "0.02",
+      "confidence": "85",
+      "suggested_live_dollars": "0.0",
+      "suggested_paper_dollars": "49.68",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "69",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-04-06T21:55:01.681492Z",
+      "ticker": "KXEMERCUTS-26-T1",
+      "title": "Will the Fed cut rates 1 times at emergency meetings?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "36.1",
+      "implied_prob": "0.095",
+      "true_prob": "0.456",
+      "confidence": "85",
+      "suggested_live_dollars": "0.0",
+      "suggested_paper_dollars": "49.92",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "12",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-04-06T19:59:49.749118Z",
       "ticker": "KXHIGHCHI-26APR06-B51.5",
@@ -914,78 +986,6 @@
       "suggested_paper_dollars": "39.78",
       "is_paper_bet": "1",
       "paper_entry_price_cents": "78",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-06T06:16:22.885621Z",
-      "ticker": "KXBTCMAXY-26DEC31-99999.99",
-      "title": "Will Bitcoin be above $99,999.99 by Dec 31, 2026 at 11:59 PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-20.9",
-      "implied_prob": "0.315",
-      "true_prob": "0.106",
-      "confidence": "80",
-      "suggested_live_dollars": "0.0",
-      "suggested_paper_dollars": "39.33",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "69",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-06T06:16:22.649830Z",
-      "ticker": "KXBTCMAX100-26-DEC",
-      "title": "Will Bitcoin be above $100000.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-19.9",
-      "implied_prob": "0.305",
-      "true_prob": "0.106",
-      "confidence": "75",
-      "suggested_live_dollars": "0.0",
-      "suggested_paper_dollars": "39.9",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "70",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-06T06:16:22.508783Z",
-      "ticker": "KXBTCMAX100-26-SEP",
-      "title": "Will Bitcoin be above $100000 by October 1, 2026 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-18.29",
-      "implied_prob": "0.245",
-      "true_prob": "0.0621",
-      "confidence": "75",
-      "suggested_live_dollars": "0.0",
-      "suggested_paper_dollars": "39.52",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "76",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-06T06:16:22.321762Z",
-      "ticker": "KXBTCMINY-27JAN01-40000.00",
-      "title": "Will Bitcoin be below $40000.00 by Jan 1, 2027 at 12:00am ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-27.94",
-      "implied_prob": "0.31",
-      "true_prob": "0.0306",
-      "confidence": "85",
-      "suggested_live_dollars": "0.0",
-      "suggested_paper_dollars": "49.7",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "70",
       "outcome": "",
       "resolved_at": "",
       "notes": ""
