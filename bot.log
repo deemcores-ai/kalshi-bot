@@ -4380,3 +4380,36 @@ Total modelable markets evaluated: 0
 [2026-04-06 02:20:37 ET] [INFO] Scan complete — no qualifying edges found (this is fine)
 [2026-04-06 02:20:37 ET] [INFO] ============================================================
 [2026-04-06 02:20:37 ET] [INFO] Scan job complete
+[2026-04-06 10:16:43 ET] [INFO] Scan job starting
+[2026-04-06 10:16:43 ET] [INFO] Kalshi API key auth OK ✅  balance: $0.00
+[2026-04-06 10:16:43 ET] [INFO] ============================================================
+[2026-04-06 10:16:43 ET] [INFO] Starting market scan
+[2026-04-06 10:16:43 ET] [INFO] Live balance: $0.00  |  Peak ever: $10.00
+[2026-04-06 10:16:43 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-06 10:16:53 ET] [INFO] Fetched 39158 open markets via events endpoint across 25 pages
+[2026-04-06 10:16:53 ET] [INFO] Fetched 39158 open markets
+[2026-04-06 10:16:53 ET] [INFO] Parsed 36444 valid markets
+[2026-04-06 10:16:53 ET] [INFO] Categories: {'Sports': 18046, 'Elections': 3990, 'Entertainment': 3835, 'Economics': 2624, 'Financials': 2188, 'Crypto': 2126, 'Politics': 1437, 'Mentions': 691}
+[2026-04-06 10:17:10 ET] [INFO]   price model: BTC-USD spot=69268.09 target=100000.00 vol=33.2% T=6470.7h → P=0.099
+[2026-04-06 10:17:10 ET] [INFO]   price model: BTC-USD spot=69268.09 target=200000.00 vol=33.2% T=6470.7h → P=0.000
+[2026-04-06 10:17:11 ET] [INFO]   price model: BTC-USD spot=69268.09 target=199999.00 vol=33.2% T=6470.7h → P=0.000
+[2026-04-06 10:17:12 ET] [INFO]   fed model: implied_rate=3.645% current≈3.610% diff=3.5bps → P=0.430
+[2026-04-06 10:17:37 ET] [INFO]   CPI model: threshold=0.2% TNX=4.34% → P=0.800
+[2026-04-06 10:17:42 ET] [INFO]   price model: XRP-USD spot=1.35 target=1.00 vol=34.3% T=589.7h → P=1.000
+[2026-04-06 10:17:42 ET] [INFO]   EDGE FOUND: KXXRPMAXMON-XRP-26APR30-140 | implied=78.0% true=100.0% edge=+22.0% dir=YES conf=70
+[2026-04-06 10:17:59 ET] [INFO]   CPI model: threshold=3.1% TNX=4.34% → P=0.624
+[2026-04-06 10:17:59 ET] [INFO]   EDGE FOUND: KXCPIYOY-26MAR-T3.1 | implied=94.5% true=62.4% edge=-32.1% dir=NO conf=95
+[2026-04-06 10:17:59 ET] [INFO]   CPI model: threshold=3.3% TNX=4.34% → P=0.604
+[2026-04-06 10:18:06 ET] [INFO]   weather model: nyc max=54.0°F target=[56,57]°F days_out=0 σ=3.5°F → P=0.175
+[2026-04-06 10:18:06 ET] [INFO]   EDGE FOUND: KXHIGHNY-26APR06-B56.5 | implied=49.5% true=17.5% edge=-31.9% dir=NO conf=80
+[2026-04-06 10:18:15 ET] [INFO]   price model: SPY spot=657.66 target=6575.00 vol=16.5% T=5.7h → P=0.000
+[2026-04-06 10:18:15 ET] [INFO]   EDGE FOUND: KXINXU-26APR06H1600-T6574.9999 | implied=77.5% true=0.0% edge=-77.5% dir=NO conf=70
+[2026-04-06 10:18:23 ET] [INFO]   fed model: implied_rate=3.645% current≈3.610% diff=3.5bps → P=0.570
+[2026-04-06 10:18:23 ET] [INFO] Checked 36376 markets | Modelable: 36376 | Edges found: 4
+[2026-04-06 10:18:23 ET] [INFO] [Discord] Trade alert sent: KXXRPMAXMON-XRP-26APR30-140
+[2026-04-06 10:18:24 ET] [INFO] [Discord] Trade alert sent: KXCPIYOY-26MAR-T3.1
+[2026-04-06 10:18:24 ET] [INFO] [Discord] Trade alert sent: KXHIGHNY-26APR06-B56.5
+[2026-04-06 10:18:24 ET] [INFO] [Discord] Trade alert sent: KXINXU-26APR06H1600-T6574.9999
+[2026-04-06 10:18:24 ET] [INFO] Scan complete — 4 alerts sent
+[2026-04-06 10:18:24 ET] [INFO] ============================================================
+[2026-04-06 10:18:24 ET] [INFO] Scan job complete
