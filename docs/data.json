@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-07T18:13:27.330217Z",
+  "generated_at": "2026-04-07T20:10:13.168739Z",
   "stats": {
-    "total_alerts": 711,
+    "total_alerts": 714,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -24,7 +24,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 328,
+        "total": 329,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -36,7 +36,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 90,
+        "total": 92,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -68,7 +68,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 386,
+        "total": 389,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -85,11 +85,65 @@
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-04-07T18:11:16.972645Z"
+    "updated_at": "2026-04-07T20:08:06.915476Z"
   },
   "live_pnl": -10.0,
   "paper_pnl": 0.0,
   "recent_alerts": [
+    {
+      "timestamp": "2026-04-07T20:10:12.937980Z",
+      "ticker": "KXHIGHAUS-26APR07-B75.5",
+      "title": "Will the **high temp in Austin** be 75-76\u00b0 on Apr 7, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-57.17",
+      "implied_prob": "0.71",
+      "true_prob": "0.1383",
+      "confidence": "80",
+      "suggested_live_dollars": "0.0",
+      "suggested_paper_dollars": "49.91",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "31",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-04-07T20:10:12.684729Z",
+      "ticker": "KXHIGHDEN-26APR07-B70.5",
+      "title": "Will the **high temp in Denver** be 70-71\u00b0 on Apr 7, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-40.17",
+      "implied_prob": "0.54",
+      "true_prob": "0.1383",
+      "confidence": "80",
+      "suggested_live_dollars": "0.0",
+      "suggested_paper_dollars": "50.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "50",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-04-07T20:10:12.440069Z",
+      "ticker": "KXSOLMAXMON-SOL-26APR30-9000",
+      "title": "Will SOL trimmed mean be above $90.00 by 11:59 PM ET on Apr 30, 2026?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-28.01",
+      "implied_prob": "0.475",
+      "true_prob": "0.1949",
+      "confidence": "80",
+      "suggested_live_dollars": "0.0",
+      "suggested_paper_dollars": "49.82",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "53",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-04-07T18:13:27.064275Z",
       "ticker": "KXPCECORE-26FEB-T0.3",
@@ -927,60 +981,6 @@
       "edge_pct": "-18.68",
       "implied_prob": "0.23",
       "true_prob": "0.0432",
-      "confidence": "75",
-      "suggested_live_dollars": "0.0",
-      "suggested_paper_dollars": "39.78",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "78",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-07T06:00:58.915381Z",
-      "ticker": "KXBTCMAXY-26DEC31-99999.99",
-      "title": "Will Bitcoin be above $99,999.99 by Dec 31, 2026 at 11:59 PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-23.94",
-      "implied_prob": "0.325",
-      "true_prob": "0.0856",
-      "confidence": "80",
-      "suggested_live_dollars": "0.0",
-      "suggested_paper_dollars": "39.44",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "68",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-07T06:00:58.791777Z",
-      "ticker": "KXBTCMAX100-26-DEC",
-      "title": "Will Bitcoin be above $100000.00 by Jan 1, 2027 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-21.94",
-      "implied_prob": "0.305",
-      "true_prob": "0.0856",
-      "confidence": "75",
-      "suggested_live_dollars": "0.0",
-      "suggested_paper_dollars": "39.9",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "70",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-07T06:00:58.631208Z",
-      "ticker": "KXBTCMAX100-26-SEP",
-      "title": "Will Bitcoin be above $100000 by October 1, 2026 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-17.92",
-      "implied_prob": "0.225",
-      "true_prob": "0.0458",
       "confidence": "75",
       "suggested_live_dollars": "0.0",
       "suggested_paper_dollars": "39.78",
