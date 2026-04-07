@@ -4785,3 +4785,52 @@ Total modelable markets evaluated: 0
 [2026-04-07 02:01:04 ET] [INFO] Scan complete — 66 alerts sent
 [2026-04-07 02:01:04 ET] [INFO] ============================================================
 [2026-04-07 02:01:04 ET] [INFO] Scan job complete
+[2026-04-07 10:58:29 ET] [INFO] Scan job starting
+[2026-04-07 10:58:29 ET] [INFO] Kalshi API key auth OK ✅  balance: $0.00
+[2026-04-07 10:58:29 ET] [INFO] ============================================================
+[2026-04-07 10:58:29 ET] [INFO] Starting market scan
+[2026-04-07 10:58:29 ET] [INFO] Live balance: $0.00  |  Peak ever: $10.00
+[2026-04-07 10:58:29 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-07 10:58:39 ET] [INFO] Fetched 41626 open markets via events endpoint across 25 pages
+[2026-04-07 10:58:39 ET] [INFO] Fetched 41626 open markets
+[2026-04-07 10:58:39 ET] [INFO] Parsed 39395 valid markets
+[2026-04-07 10:58:39 ET] [INFO] Categories: {'Sports': 19808, 'Elections': 4255, 'Entertainment': 3990, 'Economics': 2883, 'Financials': 2482, 'Crypto': 2304, 'Politics': 1436, 'Mentions': 671}
+[2026-04-07 10:58:59 ET] [INFO]   price model: BTC-USD spot=67979.93 target=100000.00 vol=31.7% T=6446.0h → P=0.078
+[2026-04-07 10:58:59 ET] [INFO]   price model: BTC-USD spot=67979.93 target=200000.00 vol=31.7% T=6446.0h → P=0.000
+[2026-04-07 10:58:59 ET] [INFO]   price model: BTC-USD spot=67979.93 target=199999.00 vol=31.7% T=6446.0h → P=0.000
+[2026-04-07 10:59:01 ET] [INFO]   fed model: implied_rate=3.650% current≈3.628% diff=2.2bps → P=0.456
+[2026-04-07 10:59:30 ET] [INFO]   CPI model: threshold=0.2% TNX=4.36% → P=0.800
+[2026-04-07 10:59:36 ET] [INFO]   weather model: san francisco rain 2026-04-07 forecast=0% → P=0.020
+[2026-04-07 10:59:36 ET] [INFO]   EDGE FOUND: KXRAINSFOM-26APR-1 | implied=32.0% true=2.0% edge=-30.0% dir=NO conf=85
+[2026-04-07 10:59:36 ET] [INFO]   weather model: houston rain 2026-04-07 forecast=0% → P=0.020
+[2026-04-07 10:59:36 ET] [INFO]   EDGE FOUND: KXRAINHOUM-26APR-3 | implied=74.5% true=2.0% edge=-72.5% dir=NO conf=85
+[2026-04-07 10:59:37 ET] [INFO]   weather model: nyc rain 2026-04-07 forecast=0% → P=0.020
+[2026-04-07 10:59:37 ET] [INFO]   EDGE FOUND: KXRAINNYCM-26APR-1 | implied=87.5% true=2.0% edge=-85.5% dir=NO conf=85
+[2026-04-07 11:00:01 ET] [INFO]   CPI model: threshold=2.6% TNX=4.36% → P=0.676
+[2026-04-07 11:00:01 ET] [INFO]   CPI model: threshold=3.3% TNX=4.36% → P=0.606
+[2026-04-07 11:00:01 ET] [INFO]   EDGE FOUND: KXCPIYOY-26MAR-T3.3 | implied=50.5% true=60.6% edge=+10.1% dir=YES conf=73
+[2026-04-07 11:00:07 ET] [INFO]   weather model: nyc max=52.0°F target=[52,53]°F days_out=0 σ=3.5°F → P=0.223
+[2026-04-07 11:00:07 ET] [INFO]   EDGE FOUND: KXHIGHNY-26APR07-B52.5 | implied=62.5% true=22.3% edge=-40.2% dir=NO conf=80
+[2026-04-07 11:00:08 ET] [INFO]   weather model: miami can't parse temp condition from title
+[2026-04-07 11:00:21 ET] [INFO]   price model: SPY spot=652.27 target=6575.00 vol=16.5% T=5.0h → P=0.000
+[2026-04-07 11:00:21 ET] [INFO]   EDGE FOUND: KXINXU-26APR07H1600-T6574.9999 | implied=36.0% true=0.0% edge=-36.0% dir=NO conf=70
+[2026-04-07 11:00:31 ET] [INFO]   CPI model: threshold=0.2% TNX=4.36% → P=0.800
+[2026-04-07 11:00:31 ET] [INFO]   EDGE FOUND: KXPCECORE-26FEB-T0.2 | implied=93.5% true=80.0% edge=-13.5% dir=NO conf=68
+[2026-04-07 11:00:31 ET] [INFO]   CPI model: threshold=0.3% TNX=4.36% → P=0.800
+[2026-04-07 11:00:31 ET] [INFO]   EDGE FOUND: KXPCECORE-26FEB-T0.3 | implied=61.0% true=80.0% edge=+19.0% dir=YES conf=75
+[2026-04-07 11:00:31 ET] [INFO]   CPI model: threshold=0.4% TNX=4.36% → P=0.800
+[2026-04-07 11:00:31 ET] [INFO]   EDGE FOUND: KXPCECORE-26FEB-T0.4 | implied=38.0% true=80.0% edge=+42.0% dir=YES conf=85
+[2026-04-07 11:00:31 ET] [INFO]   fed model: implied_rate=3.650% current≈3.628% diff=2.2bps → P=0.544
+[2026-04-07 11:00:32 ET] [INFO] Checked 39329 markets | Modelable: 39329 | Edges found: 9
+[2026-04-07 11:00:32 ET] [INFO] [Discord] Trade alert sent: KXRAINSFOM-26APR-1
+[2026-04-07 11:00:33 ET] [INFO] [Discord] Trade alert sent: KXRAINHOUM-26APR-3
+[2026-04-07 11:00:34 ET] [INFO] [Discord] Trade alert sent: KXRAINNYCM-26APR-1
+[2026-04-07 11:00:34 ET] [INFO] [Discord] Trade alert sent: KXCPIYOY-26MAR-T3.3
+[2026-04-07 11:00:34 ET] [INFO] [Discord] Trade alert sent: KXHIGHNY-26APR07-B52.5
+[2026-04-07 11:00:35 ET] [INFO] [Discord] Trade alert sent: KXINXU-26APR07H1600-T6574.9999
+[2026-04-07 11:00:35 ET] [INFO] [Discord] Trade alert sent: KXPCECORE-26FEB-T0.2
+[2026-04-07 11:00:35 ET] [INFO]   Skipping KXPCECORE-26FEB-T0.3 — suggested bet too small to be meaningful
+[2026-04-07 11:00:35 ET] [INFO] [Discord] Trade alert sent: KXPCECORE-26FEB-T0.4
+[2026-04-07 11:00:35 ET] [INFO] Scan complete — 8 alerts sent
+[2026-04-07 11:00:35 ET] [INFO] ============================================================
+[2026-04-07 11:00:35 ET] [INFO] Scan job complete
