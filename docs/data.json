@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-07T20:10:13.168739Z",
+  "generated_at": "2026-04-07T22:11:21.563934Z",
   "stats": {
-    "total_alerts": 714,
+    "total_alerts": 718,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -12,7 +12,7 @@
         "hit_rate": null
       },
       "Economics": {
-        "total": 204,
+        "total": 205,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -30,13 +30,13 @@
         "hit_rate": null
       },
       "Sports": {
-        "total": 2,
+        "total": 3,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 92,
+        "total": 94,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -68,7 +68,7 @@
         "hit_rate": null
       },
       "strong (25%+)": {
-        "total": 389,
+        "total": 393,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -85,11 +85,83 @@
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-04-07T20:08:06.915476Z"
+    "updated_at": "2026-04-07T22:09:05.211220Z"
   },
   "live_pnl": -10.0,
   "paper_pnl": 0.0,
   "recent_alerts": [
+    {
+      "timestamp": "2026-04-07T22:11:21.356381Z",
+      "ticker": "KXNBASPREAD-26APR07SACGSW-GSW13",
+      "title": "Golden State wins by over 13.5 Points?",
+      "category": "Sports",
+      "direction": "YES",
+      "edge_pct": "45.5",
+      "implied_prob": "0.545",
+      "true_prob": "1.0",
+      "confidence": "85",
+      "suggested_live_dollars": "0.0",
+      "suggested_paper_dollars": "49.5",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "55",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-04-07T22:11:21.076923Z",
+      "ticker": "KXHIGHAUS-26APR07-B77.5",
+      "title": "Will the **high temp in Austin** be 77-78\u00b0 on Apr 7, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-54.45",
+      "implied_prob": "0.72",
+      "true_prob": "0.1755",
+      "confidence": "80",
+      "suggested_live_dollars": "0.0",
+      "suggested_paper_dollars": "49.72",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "44",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-04-07T22:11:20.836367Z",
+      "ticker": "KXHIGHDEN-26APR07-B72.5",
+      "title": "Will the **high temp in Denver** be 72-73\u00b0 on Apr 7, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-70.93",
+      "implied_prob": "0.915",
+      "true_prob": "0.2057",
+      "confidence": "80",
+      "suggested_live_dollars": "0.0",
+      "suggested_paper_dollars": "49.95",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "9",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
+    {
+      "timestamp": "2026-04-07T22:11:20.533633Z",
+      "ticker": "KXCPICOREYOY-26MAR-T2.7",
+      "title": "Will the rate of core CPI inflation be above 2.7% for the year ending in March 2026?",
+      "category": "Economics",
+      "direction": "YES",
+      "edge_pct": "48.93",
+      "implied_prob": "0.175",
+      "true_prob": "0.6643",
+      "confidence": "85",
+      "suggested_live_dollars": "0.0",
+      "suggested_paper_dollars": "49.86",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "18",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-04-07T20:10:12.937980Z",
       "ticker": "KXHIGHAUS-26APR07-B75.5",
@@ -914,78 +986,6 @@
       "suggested_paper_dollars": "19.32",
       "is_paper_bet": "1",
       "paper_entry_price_cents": "92",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-07T06:00:59.564683Z",
-      "ticker": "KXBTCMAXY-26DEC31-139999.99",
-      "title": "Will Bitcoin be above $139,999.99 by Dec 31, 2026 at 11:59 PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-11.02",
-      "implied_prob": "0.115",
-      "true_prob": "0.0048",
-      "confidence": "63",
-      "suggested_live_dollars": "0.0",
-      "suggested_paper_dollars": "19.58",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "89",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-07T06:00:59.390915Z",
-      "ticker": "KXBTCMAXY-26DEC31-129999.99",
-      "title": "Will Bitcoin be above $129,999.99 by Dec 31, 2026 at 11:59 PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-12.49",
-      "implied_prob": "0.135",
-      "true_prob": "0.0101",
-      "confidence": "68",
-      "suggested_live_dollars": "0.0",
-      "suggested_paper_dollars": "19.14",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "87",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-07T06:00:59.287239Z",
-      "ticker": "KXBTCMAXY-26DEC31-119999.99",
-      "title": "Will Bitcoin be above $119,999.99 by Dec 31, 2026 at 11:59 PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-14.39",
-      "implied_prob": "0.165",
-      "true_prob": "0.0211",
-      "confidence": "68",
-      "suggested_live_dollars": "0.0",
-      "suggested_paper_dollars": "19.32",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "84",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-07T06:00:59.024679Z",
-      "ticker": "KXBTCMAXY-26DEC31-109999.99",
-      "title": "Will Bitcoin be above $109,999.99 by Dec 31, 2026 at 11:59 PM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-18.68",
-      "implied_prob": "0.23",
-      "true_prob": "0.0432",
-      "confidence": "75",
-      "suggested_live_dollars": "0.0",
-      "suggested_paper_dollars": "39.78",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "78",
       "outcome": "",
       "resolved_at": "",
       "notes": ""
