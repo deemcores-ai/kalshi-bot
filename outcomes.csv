@@ -794,3 +794,4 @@ timestamp,ticker,title,category,direction,edge_pct,implied_prob,true_prob,confid
 2026-04-08T06:04:18.698630Z,KXRATECUTCOUNT-26DEC31-T0,Will the Fed cut rates 0 times?,Economics,YES,12.1,0.345,0.466,78,0.0,19.95,1,35,,,
 2026-04-08T06:04:19.008442Z,KXCPICOREYOY-26MAR-T2.7,Will the rate of core CPI inflation be above 2.7% for the year ending in March 2026?,Economics,YES,47.85,0.185,0.6635,85,0.0,49.98,1,21,,,
 2026-04-08T06:04:19.347510Z,KXNASDAQ100U-26APR08H1600-T24799.99,"Will the Nasdaq-100 be above 24799.99 at the end of Apr 8, 2026 at 4pm EDT?",Financials,NO,-81.5,0.815,0.0,80,0.0,49.95,1,27,,,
+2026-04-08T15:02:07.652006Z,KXBTCMAXY-26DEC31-149999.99,"Will Bitcoin be above $149,999.99 by Dec 31, 2026 at 11:59 PM ET?",Crypto,NO,-8.02,0.085,0.0048,63,0.0,19.32,1,92,,,

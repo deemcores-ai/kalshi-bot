@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-08T06:04:19.508120Z",
+  "generated_at": "2026-04-08T15:02:07.857513Z",
   "stats": {
-    "total_alerts": 795,
+    "total_alerts": 796,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -24,7 +24,7 @@
         "hit_rate": null
       },
       "Crypto": {
-        "total": 370,
+        "total": 371,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -56,7 +56,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 166,
+        "total": 167,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -85,11 +85,29 @@
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-04-08T06:02:24.104995Z"
+    "updated_at": "2026-04-08T14:59:55.180193Z"
   },
   "live_pnl": -10.0,
   "paper_pnl": 0.0,
   "recent_alerts": [
+    {
+      "timestamp": "2026-04-08T15:02:07.652006Z",
+      "ticker": "KXBTCMAXY-26DEC31-149999.99",
+      "title": "Will Bitcoin be above $149,999.99 by Dec 31, 2026 at 11:59 PM ET?",
+      "category": "Crypto",
+      "direction": "NO",
+      "edge_pct": "-8.02",
+      "implied_prob": "0.085",
+      "true_prob": "0.0048",
+      "confidence": "63",
+      "suggested_live_dollars": "0.0",
+      "suggested_paper_dollars": "19.32",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "92",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-04-08T06:04:19.347510Z",
       "ticker": "KXNASDAQ100U-26APR08H1600-T24799.99",
@@ -968,24 +986,6 @@
       "suggested_paper_dollars": "39.33",
       "is_paper_bet": "1",
       "paper_entry_price_cents": "69",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-08T00:08:01.659150Z",
-      "ticker": "KXBTCMAX100-26-SEP",
-      "title": "Will Bitcoin be above $100000 by October 1, 2026 at 12:00AM ET?",
-      "category": "Crypto",
-      "direction": "NO",
-      "edge_pct": "-17.05",
-      "implied_prob": "0.255",
-      "true_prob": "0.0845",
-      "confidence": "75",
-      "suggested_live_dollars": "0.0",
-      "suggested_paper_dollars": "39.75",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "75",
       "outcome": "",
       "resolved_at": "",
       "notes": ""
