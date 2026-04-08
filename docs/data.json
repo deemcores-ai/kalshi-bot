@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-08T18:58:44.024740Z",
+  "generated_at": "2026-04-08T21:32:32.639281Z",
   "stats": {
-    "total_alerts": 803,
+    "total_alerts": 804,
     "rated": 0,
     "hit_rate": null,
     "by_category": {
@@ -36,7 +36,7 @@
         "hit_rate": null
       },
       "Climate and Weather": {
-        "total": 103,
+        "total": 104,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -56,7 +56,7 @@
     },
     "by_edge_bucket": {
       "small (8-15%)": {
-        "total": 169,
+        "total": 170,
         "rated": 0,
         "hits": 0,
         "hit_rate": null
@@ -85,11 +85,29 @@
       "peak": 1000.0
     },
     "live_stopped": false,
-    "updated_at": "2026-04-08T18:56:17.323424Z"
+    "updated_at": "2026-04-08T21:30:10.594845Z"
   },
   "live_pnl": -10.0,
   "paper_pnl": 0.0,
   "recent_alerts": [
+    {
+      "timestamp": "2026-04-08T21:32:32.433939Z",
+      "ticker": "KXHIGHMIA-26APR08-B80.5",
+      "title": "Will the **high temp in Miami** be 80-81\u00b0 on Apr 8, 2026?",
+      "category": "Climate and Weather",
+      "direction": "NO",
+      "edge_pct": "-11.94",
+      "implied_prob": "0.22",
+      "true_prob": "0.1006",
+      "confidence": "68",
+      "suggested_live_dollars": "0.0",
+      "suggested_paper_dollars": "20.0",
+      "is_paper_bet": "1",
+      "paper_entry_price_cents": "80",
+      "outcome": "",
+      "resolved_at": "",
+      "notes": ""
+    },
     {
       "timestamp": "2026-04-08T18:58:43.792244Z",
       "ticker": "KXHIGHAUS-26APR08-B82.5",
@@ -968,24 +986,6 @@
       "suggested_paper_dollars": "49.98",
       "is_paper_bet": "1",
       "paper_entry_price_cents": "6",
-      "outcome": "",
-      "resolved_at": "",
-      "notes": ""
-    },
-    {
-      "timestamp": "2026-04-08T00:08:02.626715Z",
-      "ticker": "KXNASDAQ100Y-26DEC31H1600-T19000",
-      "title": "Will the Nasdaq-100 be below 19000 at the end of Dec 31, 2026 at 4pm EST?",
-      "category": "Financials",
-      "direction": "YES",
-      "edge_pct": "84.0",
-      "implied_prob": "0.16",
-      "true_prob": "1.0",
-      "confidence": "90",
-      "suggested_live_dollars": "0.0",
-      "suggested_paper_dollars": "49.98",
-      "is_paper_bet": "1",
-      "paper_entry_price_cents": "17",
       "outcome": "",
       "resolved_at": "",
       "notes": ""
