@@ -5781,3 +5781,30 @@ Total modelable markets evaluated: 0
 [2026-04-09 16:08:54 ET] [INFO] Scan complete — 6 alerts sent
 [2026-04-09 16:08:54 ET] [INFO] ============================================================
 [2026-04-09 16:08:55 ET] [INFO] Scan job complete
+[2026-04-09 18:27:52 ET] [INFO] Scan job starting
+[2026-04-09 18:27:52 ET] [INFO] Kalshi API key auth OK ✅  balance: $9.73
+[2026-04-09 18:27:52 ET] [INFO] ============================================================
+[2026-04-09 18:27:52 ET] [INFO] Starting market scan
+[2026-04-09 18:27:52 ET] [INFO] Live balance: $9.73  |  Peak ever: $10.00
+[2026-04-09 18:27:52 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-09 18:28:03 ET] [INFO] Fetched 40076 open markets via events endpoint across 27 pages
+[2026-04-09 18:28:03 ET] [INFO] Fetched 40076 open markets
+[2026-04-09 18:28:03 ET] [INFO] Parsed 37223 valid markets
+[2026-04-09 18:28:03 ET] [INFO] Categories: {'Sports': 18605, 'Entertainment': 4788, 'Elections': 4311, 'Economics': 2792, 'Crypto': 1677, 'Politics': 1437, 'Financials': 1178, 'Mentions': 834}
+[2026-04-09 18:28:08 ET] [INFO]   CPI model: threshold=10.0% TNX=4.29% → P=0.200
+[2026-04-09 18:28:28 ET] [INFO]   price model: SOL-USD spot=85.18 target=500.00 vol=49.0% T=6390.5h → P=0.000
+[2026-04-09 18:28:29 ET] [INFO]   price model: SOL-USD spot=85.18 target=200.00 vol=49.0% T=6390.5h → P=0.021
+[2026-04-09 18:28:29 ET] [INFO]   EDGE FOUND: KXSOLMAXY-27JAN01-200 | implied=18.0% true=2.1% edge=-15.9% dir=NO conf=70
+[2026-04-09 18:28:29 ET] [INFO]   price model: BTC-USD spot=72794.11 target=100000.00 vol=34.3% T=6390.5h → P=0.139
+[2026-04-09 18:28:29 ET] [INFO]   price model: BTC-USD spot=72794.11 target=100000.00 vol=34.3% T=6390.5h → P=0.139
+[2026-04-09 18:28:30 ET] [INFO]   price model: BTC-USD spot=72794.11 target=200000.00 vol=34.3% T=6390.5h → P=0.000
+[2026-04-09 18:28:30 ET] [INFO]   price model: BTC-USD spot=72794.11 target=149999.00 vol=34.3% T=6390.5h → P=0.007
+[2026-04-09 18:28:30 ET] [INFO]   price model: BTC-USD spot=72794.11 target=199999.00 vol=34.3% T=6390.5h → P=0.000
+[2026-04-09 18:29:10 ET] [INFO]   CPI model: threshold=0.2% TNX=4.29% → P=0.800
+[2026-04-09 18:30:17 ET] [INFO]   fed model: implied_rate=3.645% current≈3.588% diff=5.7bps → P=0.614
+[2026-04-09 18:30:17 ET] [INFO] Checked 37144 markets | Modelable: 37144 | Edges found: 1
+[2026-04-09 18:30:17 ET] [WARN] [Discord] HTTP 404: {"message": "Unknown Webhook", "code": 10015}
+[2026-04-09 18:30:17 ET] [INFO] [Discord] Trade alert sent: KXSOLMAXY-27JAN01-200
+[2026-04-09 18:30:17 ET] [INFO] Scan complete — 1 alerts sent
+[2026-04-09 18:30:17 ET] [INFO] ============================================================
+[2026-04-09 18:30:17 ET] [INFO] Scan job complete
