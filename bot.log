@@ -5676,3 +5676,61 @@ Total modelable markets evaluated: 0
 [2026-04-09 02:01:18 ET] [INFO] Scan complete — 70 alerts sent
 [2026-04-09 02:01:18 ET] [INFO] ============================================================
 [2026-04-09 02:01:18 ET] [INFO] Scan job complete
+[2026-04-09 12:07:19 ET] [INFO] Scan job starting
+[2026-04-09 12:07:19 ET] [INFO] Kalshi API key auth OK ✅  balance: $0.00
+[2026-04-09 12:07:19 ET] [INFO] ============================================================
+[2026-04-09 12:07:19 ET] [INFO] Starting market scan
+[2026-04-09 12:07:19 ET] [INFO] Live balance: $0.00  |  Peak ever: $10.00
+[2026-04-09 12:07:19 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-09 12:07:31 ET] [INFO] Fetched 41514 open markets via events endpoint across 27 pages
+[2026-04-09 12:07:31 ET] [INFO] Fetched 41514 open markets
+[2026-04-09 12:07:32 ET] [INFO] Parsed 38181 valid markets
+[2026-04-09 12:07:32 ET] [INFO] Categories: {'Sports': 18311, 'Entertainment': 4753, 'Elections': 4296, 'Economics': 2792, 'Crypto': 2220, 'Financials': 1994, 'Politics': 1435, 'Mentions': 769}
+[2026-04-09 12:07:36 ET] [INFO]   CPI model: threshold=10.0% TNX=4.28% → P=0.200
+[2026-04-09 12:07:55 ET] [INFO]   price model: BTC-USD spot=72306.98 target=100000.00 vol=34.0% T=6396.9h → P=0.132
+[2026-04-09 12:07:55 ET] [INFO]   price model: BTC-USD spot=72306.98 target=100000.00 vol=34.0% T=6396.9h → P=0.132
+[2026-04-09 12:07:55 ET] [INFO]   price model: BTC-USD spot=72306.98 target=200000.00 vol=34.0% T=6396.9h → P=0.000
+[2026-04-09 12:07:56 ET] [INFO]   price model: BTC-USD spot=72306.98 target=149999.00 vol=34.0% T=6396.9h → P=0.006
+[2026-04-09 12:07:56 ET] [INFO]   price model: BTC-USD spot=72306.98 target=199999.00 vol=34.0% T=6396.9h → P=0.000
+[2026-04-09 12:08:34 ET] [INFO]   CPI model: threshold=0.2% TNX=4.28% → P=0.800
+[2026-04-09 12:08:42 ET] [INFO]   price model: BTC-USD spot=72259.89 target=80000.00 vol=34.0% T=515.9h → P=0.108
+[2026-04-09 12:08:42 ET] [INFO]   EDGE FOUND: KXBTCMAXMON-BTC-26APR30-8000000 | implied=20.5% true=10.8% edge=-9.6% dir=NO conf=63
+[2026-04-09 12:08:42 ET] [INFO]   price model: BTC-USD spot=72259.89 target=82500.00 vol=34.0% T=515.9h → P=0.054
+[2026-04-09 12:08:42 ET] [INFO]   EDGE FOUND: KXBTCMAXMON-BTC-26APR30-8250000 | implied=15.0% true=5.4% edge=-9.6% dir=NO conf=63
+[2026-04-09 12:09:21 ET] [INFO]   weather model: nyc can't parse temp condition from title
+[2026-04-09 12:09:22 ET] [INFO]   weather model: chicago max=58.0°F target=[71,72]°F days_out=0 σ=3.5°F → P=0.010
+[2026-04-09 12:09:22 ET] [INFO]   EDGE FOUND: KXHIGHCHI-26APR09-B71.5 | implied=40.0% true=1.0% edge=-39.0% dir=NO conf=80
+[2026-04-09 12:09:23 ET] [INFO]   price model: GC=F spot=4816.10 target=5.50 vol=38.1% T=345.9h → P=1.000
+[2026-04-09 12:09:23 ET] [INFO]   EDGE FOUND: KXNBASPREAD-26APR09LALGSW-GSW5 | implied=46.5% true=100.0% edge=+53.5% dir=YES conf=85
+[2026-04-09 12:09:26 ET] [INFO]   price model: DIA spot=481.86 target=2.50 vol=17.5% T=343.4h → P=1.000
+[2026-04-09 12:09:26 ET] [INFO]   EDGE FOUND: KXNBASPREAD-26APR09INDBKN-IND2 | implied=53.5% true=100.0% edge=+46.5% dir=YES conf=85
+[2026-04-09 12:09:30 ET] [INFO]   price model: QQQ spot=609.64 target=25299.99 vol=21.8% T=3.9h → P=0.000
+[2026-04-09 12:09:30 ET] [INFO]   EDGE FOUND: KXNASDAQ100U-26APR09H1600-T25299.99 | implied=26.0% true=0.0% edge=-26.0% dir=NO conf=70
+[2026-04-09 12:09:30 ET] [INFO]   price model: SPY spot=680.03 target=6775.00 vol=18.0% T=3.9h → P=0.000
+[2026-04-09 12:09:30 ET] [INFO]   EDGE FOUND: KXINXU-26APR09H1600-T6774.9999 | implied=94.0% true=0.0% edge=-94.0% dir=NO conf=70
+[2026-04-09 12:09:30 ET] [INFO]   price model: SPY spot=680.03 target=6850.00 vol=18.0% T=3.9h → P=0.000
+[2026-04-09 12:09:30 ET] [INFO]   EDGE FOUND: KXINXU-26APR09H1600-T6849.9999 | implied=25.0% true=0.0% edge=-25.0% dir=NO conf=70
+[2026-04-09 12:09:43 ET] [INFO]   fed model: implied_rate=3.645% current≈3.585% diff=6.0bps → P=0.620
+[2026-04-09 12:09:43 ET] [INFO]   EDGE FOUND: FEDHIKE-26JUN30 | implied=5.0% true=62.0% edge=+57.0% dir=YES conf=85
+[2026-04-09 12:09:43 ET] [INFO]   fed model: implied_rate=3.645% current≈3.585% diff=6.0bps → P=0.620
+[2026-04-09 12:09:43 ET] [INFO] Checked 38111 markets | Modelable: 38111 | Edges found: 9
+[2026-04-09 12:09:43 ET] [WARN] [Discord] HTTP 404: {"message": "Unknown Webhook", "code": 10015}
+[2026-04-09 12:09:43 ET] [INFO] [Discord] Trade alert sent: KXBTCMAXMON-BTC-26APR30-8000000
+[2026-04-09 12:09:43 ET] [WARN] [Discord] HTTP 404: {"message": "Unknown Webhook", "code": 10015}
+[2026-04-09 12:09:43 ET] [INFO] [Discord] Trade alert sent: KXBTCMAXMON-BTC-26APR30-8250000
+[2026-04-09 12:09:44 ET] [WARN] [Discord] HTTP 404: {"message": "Unknown Webhook", "code": 10015}
+[2026-04-09 12:09:44 ET] [INFO] [Discord] Trade alert sent: KXHIGHCHI-26APR09-B71.5
+[2026-04-09 12:09:44 ET] [WARN] [Discord] HTTP 404: {"message": "Unknown Webhook", "code": 10015}
+[2026-04-09 12:09:44 ET] [INFO] [Discord] Trade alert sent: KXNBASPREAD-26APR09LALGSW-GSW5
+[2026-04-09 12:09:44 ET] [WARN] [Discord] HTTP 404: {"message": "Unknown Webhook", "code": 10015}
+[2026-04-09 12:09:44 ET] [INFO] [Discord] Trade alert sent: KXNBASPREAD-26APR09INDBKN-IND2
+[2026-04-09 12:09:44 ET] [INFO]   Skipping KXNASDAQ100U-26APR09H1600-T25299.99 — suggested bet too small to be meaningful
+[2026-04-09 12:09:44 ET] [WARN] [Discord] HTTP 404: {"message": "Unknown Webhook", "code": 10015}
+[2026-04-09 12:09:44 ET] [INFO] [Discord] Trade alert sent: KXINXU-26APR09H1600-T6774.9999
+[2026-04-09 12:09:44 ET] [WARN] [Discord] HTTP 429: {"message": "You are being rate limited.", "retry_after": 0.3, "global": false}
+[2026-04-09 12:09:44 ET] [INFO] [Discord] Trade alert sent: KXINXU-26APR09H1600-T6849.9999
+[2026-04-09 12:09:44 ET] [WARN] [Discord] HTTP 429: {"message": "You are being rate limited.", "retry_after": 0.3, "global": false}
+[2026-04-09 12:09:44 ET] [INFO] [Discord] Trade alert sent: FEDHIKE-26JUN30
+[2026-04-09 12:09:44 ET] [INFO] Scan complete — 8 alerts sent
+[2026-04-09 12:09:44 ET] [INFO] ============================================================
+[2026-04-09 12:09:44 ET] [INFO] Scan job complete
