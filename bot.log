@@ -6124,3 +6124,36 @@ Total modelable markets evaluated: 0
 [2026-04-09 20:07:54 ET] [INFO] Scan complete — 73 alerts sent
 [2026-04-09 20:07:54 ET] [INFO] ============================================================
 [2026-04-09 20:07:54 ET] [INFO] Scan job complete
+[2026-04-10 02:19:16 ET] [INFO] Scan job starting
+[2026-04-10 02:19:17 ET] [INFO] Kalshi API key auth OK ✅  balance: $0.59
+[2026-04-10 02:19:17 ET] [INFO] ============================================================
+[2026-04-10 02:19:17 ET] [INFO] Starting market scan
+[2026-04-10 02:19:17 ET] [INFO] Live balance: $0.59  |  Peak ever: $10.00
+[2026-04-10 02:19:17 ET] [WARN] API GET /markets → HTTP 400
+[2026-04-10 02:19:29 ET] [INFO] Fetched 39641 open markets via events endpoint across 27 pages
+[2026-04-10 02:19:29 ET] [INFO] Fetched 39641 open markets
+[2026-04-10 02:19:30 ET] [INFO] Parsed 37018 valid markets
+[2026-04-10 02:19:30 ET] [INFO] Categories: {'Sports': 18731, 'Entertainment': 4700, 'Elections': 4333, 'Economics': 2769, 'Crypto': 1676, 'Politics': 1432, 'Financials': 1176, 'Mentions': 778}
+[2026-04-10 02:19:35 ET] [INFO]   CPI model: threshold=10.0% TNX=4.29% → P=0.200
+[2026-04-10 02:19:56 ET] [INFO]   price model: SOL-USD spot=83.42 target=500.00 vol=49.0% T=6382.7h → P=0.000
+[2026-04-10 02:19:57 ET] [INFO]   price model: BTC-USD spot=72106.59 target=100000.00 vol=34.5% T=6382.7h → P=0.133
+[2026-04-10 02:19:57 ET] [INFO]   price model: BTC-USD spot=72106.59 target=100000.00 vol=34.5% T=6382.7h → P=0.133
+[2026-04-10 02:19:57 ET] [INFO]   price model: BTC-USD spot=72106.59 target=200000.00 vol=34.5% T=6382.7h → P=0.000
+[2026-04-10 02:19:57 ET] [INFO]   price model: BTC-USD spot=72106.59 target=149999.00 vol=34.5% T=6382.7h → P=0.006
+[2026-04-10 02:19:57 ET] [INFO]   price model: BTC-USD spot=72106.59 target=199999.00 vol=34.5% T=6382.7h → P=0.000
+[2026-04-10 02:20:00 ET] [INFO]   fed model: implied_rate=3.640% current≈3.588% diff=5.2bps → P=0.396
+[2026-04-10 02:20:39 ET] [INFO]   CPI model: threshold=0.2% TNX=4.29% → P=0.800
+[2026-04-10 02:20:49 ET] [INFO]   price model: BTC-USD spot=72106.59 target=82500.00 vol=34.5% T=501.7h → P=0.051
+[2026-04-10 02:21:43 ET] [INFO]   CPI model: threshold=2.7% TNX=4.29% → P=0.659
+[2026-04-10 02:21:43 ET] [INFO]   EDGE FOUND: KXCPICOREYOY-26MAR-T2.7 | implied=13.5% true=65.9% edge=+52.4% dir=YES conf=80
+[2026-04-10 02:21:48 ET] [INFO]   fed model: implied_rate=3.640% current≈3.588% diff=5.2bps → P=0.604
+[2026-04-10 02:21:48 ET] [INFO]   EDGE FOUND: FEDHIKE-26JUN30 | implied=5.0% true=60.4% edge=+55.4% dir=YES conf=85
+[2026-04-10 02:21:48 ET] [INFO]   fed model: implied_rate=3.640% current≈3.588% diff=5.2bps → P=0.604
+[2026-04-10 02:21:49 ET] [INFO] Checked 36950 markets | Modelable: 36950 | Edges found: 2
+[2026-04-10 02:21:49 ET] [WARN] [Discord] HTTP 404: {"message": "Unknown Webhook", "code": 10015}
+[2026-04-10 02:21:49 ET] [INFO] [Discord] Trade alert sent: KXCPICOREYOY-26MAR-T2.7
+[2026-04-10 02:21:49 ET] [WARN] [Discord] HTTP 404: {"message": "Unknown Webhook", "code": 10015}
+[2026-04-10 02:21:49 ET] [INFO] [Discord] Trade alert sent: FEDHIKE-26JUN30
+[2026-04-10 02:21:49 ET] [INFO] Scan complete — 2 alerts sent
+[2026-04-10 02:21:49 ET] [INFO] ============================================================
+[2026-04-10 02:21:49 ET] [INFO] Scan job complete

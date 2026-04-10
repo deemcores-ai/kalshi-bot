@@ -1,6 +1,6 @@
 {
   "live": {
-    "balance": 9.73,
+    "balance": 0.59,
     "peak": 10.0
   },
   "paper": {
@@ -8,5 +8,5 @@
     "peak": 1000.0
   },
   "live_stopped": false,
-  "updated_at": "2026-04-10T00:05:15.163322Z"
+  "updated_at": "2026-04-10T06:19:17.184560Z"
 }

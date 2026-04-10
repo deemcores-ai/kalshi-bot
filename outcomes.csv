@@ -961,3 +961,5 @@ timestamp,ticker,title,category,direction,edge_pct,implied_prob,true_prob,confid
 2026-04-10T00:07:54.022919Z,KXNBASPREAD-26APR09INDBKN-IND8,Indiana wins by over 8.5 points?,Sports,YES,34.5,0.655,1.0,85,0.67,49.58,1,67,,,
 2026-04-10T00:07:54.120081Z,FEDHIKE-27JUN30,"Will the Federal Reserve hike rates by June 30, 2027?",Economics,YES,23.9,0.375,0.614,75,0.4,40.0,1,40,,,
 2026-04-10T00:07:54.204942Z,FEDHIKE-26DEC31,"Will the Federal Reserve hike rates by December 31, 2026?",Economics,YES,40.9,0.205,0.614,90,0.42,49.98,1,21,,,
+2026-04-10T06:21:49.520623Z,KXCPICOREYOY-26MAR-T2.7,Will the rate of core CPI inflation be above 2.7% for the year ending in March 2026?,Economics,YES,52.43,0.135,0.6593,80,0.14,49.98,1,14,,,
+2026-04-10T06:21:49.706645Z,FEDHIKE-26JUN30,"Will the Federal Reserve hike rates by June 30, 2026?",Economics,YES,55.4,0.05,0.604,85,0.06,49.98,1,6,,,
