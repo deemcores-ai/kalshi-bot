@@ -7,6 +7,6 @@
     "balance": 1000.0,
     "peak": 1000.0
   },
-  "live_stopped": false,
-  "updated_at": "2026-04-10T06:19:17.184560Z"
+  "live_stopped": true,
+  "updated_at": "2026-04-10T14:35:36.563404Z"
 }

@@ -6157,3 +6157,12 @@ Total modelable markets evaluated: 0
 [2026-04-10 02:21:49 ET] [INFO] Scan complete — 2 alerts sent
 [2026-04-10 02:21:49 ET] [INFO] ============================================================
 [2026-04-10 02:21:49 ET] [INFO] Scan job complete
+[2026-04-10 10:35:36 ET] [INFO] Scan job starting
+[2026-04-10 10:35:36 ET] [INFO] Kalshi API key auth OK ✅  balance: $0.59
+[2026-04-10 10:35:36 ET] [INFO] ============================================================
+[2026-04-10 10:35:36 ET] [INFO] Starting market scan
+[2026-04-10 10:35:36 ET] [WARN] DRAWDOWN STOP: balance $0.59 fell below 50%-from-peak threshold $5.00 (peak was $10.00)
+[2026-04-10 10:35:36 ET] [WARN] [Discord] HTTP 404: {"message": "Unknown Webhook", "code": 10015}
+[2026-04-10 10:35:36 ET] [WARN] [Discord] HTTP 404: {"message": "Unknown Webhook", "code": 10015}
+[2026-04-10 10:35:36 ET] [WARN] Drawdown stop active — scan aborted
+[2026-04-10 10:35:36 ET] [INFO] Scan job complete
