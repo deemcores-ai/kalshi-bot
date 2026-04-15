@@ -6452,3 +6452,11 @@ Total modelable markets evaluated: 0
 [2026-04-15 14:48:24 ET] [WARN] [Discord] HTTP 404: {"message": "Unknown Webhook", "code": 10015}
 [2026-04-15 14:48:24 ET] [WARN] Drawdown stop active — scan aborted
 [2026-04-15 14:48:24 ET] [INFO] Scan job complete
+[2026-04-15 17:38:53 ET] [INFO] Scan job starting
+[2026-04-15 17:38:53 ET] [INFO] Kalshi API key auth OK ✅  balance: $0.59
+[2026-04-15 17:38:53 ET] [INFO] ============================================================
+[2026-04-15 17:38:53 ET] [INFO] Starting market scan
+[2026-04-15 17:38:53 ET] [WARN] [Discord] HTTP 404: {"message": "Unknown Webhook", "code": 10015}
+[2026-04-15 17:38:53 ET] [WARN] [Discord] HTTP 404: {"message": "Unknown Webhook", "code": 10015}
+[2026-04-15 17:38:53 ET] [WARN] Drawdown stop active — scan aborted
+[2026-04-15 17:38:53 ET] [INFO] Scan job complete
