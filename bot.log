@@ -19205,3 +19205,12 @@ Total modelable markets evaluated: 0
 [2026-08-30 22:35:35 ET] [WARN] [Discord] HTTP 404: {"message": "Unknown Webhook", "code": 10015}
 [2026-08-30 22:35:35 ET] [WARN] Drawdown stop active — scan aborted
 [2026-08-30 22:35:35 ET] [INFO] Scan job complete
+[2026-08-31 05:07:12 ET] [INFO] Scan job starting
+[2026-08-31 05:07:12 ET] [WARN] API GET /portfolio/balance error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+[2026-08-31 05:07:12 ET] [ERROR] Kalshi API key auth FAILED — check KALSHI_API_KEY_ID and KALSHI_PRIVATE_KEY
+[2026-08-31 05:07:12 ET] [INFO] ============================================================
+[2026-08-31 05:07:12 ET] [INFO] Starting market scan
+[2026-08-31 05:07:12 ET] [WARN] [Discord] HTTP 404: {"message": "Unknown Webhook", "code": 10015}
+[2026-08-31 05:07:13 ET] [WARN] [Discord] HTTP 404: {"message": "Unknown Webhook", "code": 10015}
+[2026-08-31 05:07:13 ET] [WARN] Drawdown stop active — scan aborted
+[2026-08-31 05:07:13 ET] [INFO] Scan job complete
